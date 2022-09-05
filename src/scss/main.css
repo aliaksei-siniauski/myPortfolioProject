@@ -1,0 +1,309 @@
+/* Abstracts */ /* Colors */
+/* Size */
+/* Fonts */
+.languages, .list, .header__container, body {
+  display: flex;
+}
+
+body {
+  flex-direction: column;
+}
+
+body {
+  justify-content: space-between;
+}
+
+.list, .header__container {
+  align-items: center;
+}
+
+.languages, .list__link, .button {
+  cursor: pointer;
+}
+
+.language, .list__link:hover, .list__link::after, .list__link, .button::after, .button {
+  transition: 0.5s ease-in-out;
+}
+
+/* Base */
+body {
+  min-height: 100vh;
+  background: hsl(232deg, 26%, 16%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/*Basic styles*/
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list],
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  display: block;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+section,
+main,
+footer,
+header,
+article {
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*Utilities  */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+.security {
+  background: #24263b;
+  border-radius: 4px;
+  border: 1px solid red;
+}
+
+.section {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #7b5b4c;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+/* Layout  */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header__container {
+  padding: 2rem 0;
+}
+
+.hero__container {
+  display: grid;
+}
+
+/* Components */
+.button {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding: 1.35rem 3.25rem;
+  background: transparent;
+  color: hsl(0deg, 0%, 100%);
+  border: 1px solid hsl(225deg, 20%, 61%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 0.5rem;
+}
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  color: hsl(225deg, 20%, 61%);
+}
+.button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(11deg, 99%, 55%);
+  border-radius: 0.5rem;
+}
+.button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.list__item {
+  padding-left: 3rem;
+  font-size: 1.8rem;
+}
+
+.list__link {
+  position: relative;
+}
+.list__link::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: hsl(11deg, 99%, 55%);
+  opacity: 0;
+}
+.list__link:hover {
+  color: hsl(11deg, 99%, 55%);
+}
+.list__link:hover:hover::after {
+  opacity: 1;
+}
+
+.logo {
+  display: flex;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  margin-top: 0.4rem;
+  margin-left: auto;
+  margin-right: 1rem;
+  cursor: pointer;
+  user-select: none;
+  z-index: 100;
+}
+
+.hamburger.open .line-1 {
+  transform: rotate(-45deg) translate(-2px, 8px);
+}
+
+.hamburger.open .line-2 {
+  opacity: 0;
+}
+
+.hamburger.open .line-3 {
+  transform: rotate(45deg) translate(-6px, -12px);
+}
+
+.hamburger .line {
+  display: block;
+  width: 80%;
+  height: 0.3rem;
+  margin: 0.3rem 0;
+  background: #fff;
+  z-index: 100;
+}
+
+.line:not(:last-child) {
+  margin-bottom: 0.4rem; /* 1rem */
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}
+.languages {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.language {
+  padding-left: 1rem;
+}
+.language--active {
+  color: hsl(11deg, 99%, 55%);
+}
+
+/*# sourceMappingURL=main.css.map */

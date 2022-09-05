@@ -1,0 +1,40 @@
+.button {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding: 1.35rem 3.25rem;
+  background: transparent;
+  color: $light-color;
+  border: 1px solid $hover-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: $border-radius;
+  @extend %transition;
+  @extend %cursor-pointer;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    color: $hover-color;
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: $main-color;
+    border-radius: $border-radius;
+    @extend %transition;
+  }
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+}

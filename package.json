@@ -1,0 +1,19 @@
+{
+  "name": "myportfolioproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch src/scss/main.scss src/scss/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliaksei-siniauski/myPortfolioProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliaksei-siniauski/myPortfolioProject/issues"
+  },
+  "homepage": "https://github.com/aliaksei-siniauski/myPortfolioProject#readme"
+}

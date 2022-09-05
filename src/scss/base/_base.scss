@@ -1,0 +1,11 @@
+body {
+  min-height: 100vh;
+  @extend %flex;
+  @extend %flex-column;
+  @extend %js-content-space-between;
+  background: $bg-color;
+  color: $light-color;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}

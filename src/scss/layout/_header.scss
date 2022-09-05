@@ -1,0 +1,15 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+  box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.05));
+}
+
+.header__container {
+  @extend %flex;
+  @extend %al-items-center;
+  padding: 2rem 0;
+}

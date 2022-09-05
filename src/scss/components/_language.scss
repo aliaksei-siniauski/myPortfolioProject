@@ -1,0 +1,13 @@
+.languages {
+  @extend %flex;
+  @extend %cursor-pointer;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+.language {
+  padding-left: 1rem;
+  @extend %transition;
+  &--active {
+    color: $main-color;
+  }
+}
