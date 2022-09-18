@@ -1,0 +1,26 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copy {
+  color: $text-color;
+}
+
+.copy-symball {
+  color: red;
+}
+
+.auther {
+  color: $accent-color;
+  border-bottom: 1px solid $accent-color;
+}

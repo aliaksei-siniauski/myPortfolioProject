@@ -7,7 +7,6 @@
 
 @import "base/base";
 @import "base/reset";
-@import "base/font";
 @import "base/typography";
 
 /*Utilities  */
@@ -16,11 +15,21 @@
 
 /* Layout  */
 @import "layout/header";
+@import "layout/intro";
 @import "layout/about";
+@import "layout/skills";
+@import "layout/portfolio";
+@import "layout/contacts";
+@import "layout/footer";
+@import "layout/collumn";
 
 /* Components */
 @import "components/button";
+@import "components/animation";
 @import "components/nav";
 @import "components/logo";
 @import "components/hamburger";
 @import "components/language";
+@import "components/icon";
+@import "components/social";
+@import "components/tags";

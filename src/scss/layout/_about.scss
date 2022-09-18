@@ -1,3 +1,32 @@
 .hero__container {
+  padding: 8rem 0;
+  max-width: 95%;
+}
+
+.hero-content {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.hero-bio {
+  padding-inline: 1.2rem;
+  box-shadow: 0px 2px 15px 2px ($hover-color);
+  text-align: justify;
+}
+
+.hero__title {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.hero__img {
+  object-fit: cover;
+  border-radius: 10%;
+  -webkit-animation: filter-animation 5s infinite;
+  animation: filter-animation 5s infinite;
+  @extend %transition;
+}
+.text-important {
+  color: $accent-color;
 }

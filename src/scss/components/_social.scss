@@ -1,0 +1,38 @@
+.social-list {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 300px;
+}
+.social__item {
+  padding-right: 1rem;
+}
+.social__link {
+  height: 60px;
+  width: 60px;
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  border: 1px solid $hover-color;
+  border-radius: $border-radius;
+  background: $theme-color;
+  opacity: 0.5;
+  @extend %transition;
+  &:hover {
+    background: $black-color;
+    border: 1px solid $main-color;
+    opacity: 1;
+    .social-icon {
+      filter: invert(44%) sepia(57%) saturate(3026%) hue-rotate(200deg)
+        brightness(98%) contrast(97%);
+    }
+  }
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

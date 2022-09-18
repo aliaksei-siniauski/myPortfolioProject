@@ -1,0 +1,12 @@
+.skills-wrapper {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding: 5rem 0;
+  justify-items: center;
+}
+
+.icon-title {
+  color: $text-color;
+  @extend %text-uppercase;
+}

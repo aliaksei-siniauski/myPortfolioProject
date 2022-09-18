@@ -1,12 +1,14 @@
 .languages {
   @extend %flex;
   @extend %cursor-pointer;
-  padding-right: 4rem;
-  padding-left: 4rem;
+  padding-inline: 6rem;
 }
 .language {
   padding-left: 1rem;
   @extend %transition;
+  &:hover {
+    color: $main-color;
+  }
   &--active {
     color: $main-color;
   }

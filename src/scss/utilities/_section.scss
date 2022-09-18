@@ -1,8 +1,12 @@
 .section {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  text-transform: uppercase;
+  padding: 9rem;
+  padding-bottom: 9rem;
+}
+
+.section-title {
+  font-size: 3rem;
   letter-spacing: 0.2rem;
-  color: #7b5b4c;
-  padding: 1.2rem;
+  color: $accent-color;
+  text-align: center;
+  @extend %text-uppercase;
 }

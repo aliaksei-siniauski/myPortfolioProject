@@ -1,0 +1,37 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  > * {
+    margin: 0 2.1rem 0 0;
+  }
+}
+
+.tag {
+  padding: 0.4rem 1.4rem;
+  font-size: 1.8rem;
+  color: $text-color;
+  border-radius: 5rem;
+  @extend %cursor-pointer;
+  @extend %text-uppercase;
+  @extend %transition;
+  &:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+    border-color: $main-color;
+  }
+
+  &--active {
+    background: $theme-color;
+    color: $main-color;
+  }
+  &--bordered {
+    border: 1px solid $hover-color;
+    @extend %transition;
+    &:hover {
+      background: linear-gradient(to left, $light-color, $main-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

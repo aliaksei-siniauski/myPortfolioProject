@@ -4,12 +4,12 @@
   left: 0;
   z-index: 1;
   width: 100%;
-  background-color: black;
-  box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.05));
+  box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.7));
+  background: $theme-color;
 }
 
 .header__container {
   @extend %flex;
   @extend %al-items-center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }

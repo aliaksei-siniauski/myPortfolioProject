@@ -1,0 +1,43 @@
+.intro__container {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.intro__inner {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  @extend %text-uppercase;
+}
+
+.intro__title {
+  width: 100%;
+  font-size: 4.5rem;
+  text-align: left;
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("/src/icons/hello.svg");
+  }
+}
+
+.intro__subtitle {
+  color: $text-color;
+  $ff-second: "Roboto Mono", monospace;
+  font-size: 3rem;
+}
+
+.title-name {
+  color: $accent-color;
+}
+
+.subtitle-span {
+  font-size: 2.4rem;
+  opacity: 0.5;
+}

@@ -2,7 +2,7 @@
   position: relative;
   display: inline-block;
   z-index: 1;
-  padding: 1.35rem 3.25rem;
+  padding: 1.3rem 3.2rem;
   background: transparent;
   color: $light-color;
   border: 1px solid $hover-color;
@@ -15,10 +15,12 @@
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
     color: $hover-color;
+    border: 1px solid $main-color;
   }
   &:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid $main-color;
   }
   &::after {
     content: "";
@@ -29,6 +31,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
+    border: 1px solid $main-color;
     background-color: $main-color;
     border-radius: $border-radius;
     @extend %transition;
