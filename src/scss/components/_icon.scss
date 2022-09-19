@@ -12,7 +12,7 @@
 .icon-hello {
   width: 32px;
   height: 32px;
-  background-image: url("/src/icons/hello.svg");
+  background-image: url("../icons/hello.svg");
 }
 
 .icon-square {
@@ -22,7 +22,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: hsl(244, 65%, 38%);
+  background: #2a22a0;
   box-shadow: 0px 2px 15px 2px ($hover-color);
   border-radius: $border-radius;
   padding-bottom: 2rem;
@@ -53,81 +53,81 @@
 }
 
 .icon-html {
-  background-image: url("/src/icons/skills/html5.svg");
+  background-image: url("../icons/skills/html5.svg");
   @extend %icon-card;
 }
 .icon-css {
-  background-image: url("/src/icons/skills/css.svg");
+  background-image: url("../icons/skills/css.svg");
   @extend %icon-card;
 }
 .icon-js {
-  background-image: url("/src/icons/skills/javascript.svg");
+  background-image: url("../icons/skills/javascript.svg");
   @extend %icon-card;
 }
 
 .icon-sass {
-  background-image: url("/src/icons/skills/sass.svg");
+  background-image: url("../icons/skills/sass.svg");
   @extend %icon-card;
 }
 
 .icon-bootstrap {
-  background-image: url("/src/icons/skills/bootstrap.svg");
+  background-image: url("../icons/skills/bootstrap.svg");
   @extend %icon-card;
 }
 
 .icon-photoshop {
-  background-image: url("/src/icons/skills/photoshop.svg");
+  background-image: url("../icons/skills/photoshop.svg");
   @extend %icon-card;
 }
 
 .icon-figma {
-  background-image: url("/src/icons/skills/figma.svg");
+  background-image: url("../icons/skills/figma.svg");
   @extend %icon-card;
 }
 .icon-gulp {
-  background-image: url("/src/icons/skills/gulp.svg");
+  background-image: url("../icons/skills/gulp.svg");
   @extend %icon-card;
 }
 .icon-webpack {
-  background-image: url("/src/icons/skills/webpack.svg");
+  background-image: url("../icons/skills/webpack.svg");
   @extend %icon-card;
 }
 
 .icon-git {
-  background-image: url("/src/icons/skills/git.svg");
+  background-image: url("../icons/skills/git.svg");
   @extend %icon-card;
 }
 
 .icon-responsive {
-  background-image: url("/src/icons/skills/responsive-website.svg");
+  background-image: url("../icons/skills/responsive-website.svg");
   @extend %icon-card;
 }
 
 .icon-accessibility {
-  background-image: url("/src/icons/skills/accessibility-shortcut.svg");
+  background-image: url("../icons/skills/accessibility-shortcut.svg");
   @extend %icon-card;
 }
 
 .icon-github {
-  background: url("/src/icons/skills/github.svg");
+  background: url("../icons/skills/github.svg");
 }
 
 .icon-discord {
-  background: url("/src/icons/skills/discord.svg");
+  background: url("../icons/skills/discord.svg");
 }
 
 .icon-linkedin {
-  background: url("/src/icons/skills/linkedin.svg");
+  background: url("../icons/skills/linkedin.svg");
 }
 
 .icon-gmail {
-  background: url("/src/icons/skills/gmail.svg");
+  background: url("../icons/skills/gmail.svg");
 }
 
 .icon-site {
   width: 30px;
   height: 30px;
-  background: url("/src/icons/portfolio/website.svg");
+  background: url("../icons/portfolio/website.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -151,7 +151,7 @@
   background-repeat: no-repeat;
   right: 0.5%;
   bottom: 5%;
-  background: url("/src/icons/arrow.svg");
+  background: url("../icons/arrow.svg");
   @extend %cursor-pointer;
   &:hover {
     filter: invert(44%) sepia(57%) saturate(3026%) hue-rotate(200deg)
