@@ -11,11 +11,21 @@
   top: 0;
   opacity: 0;
 }
-.portfolio-overlay {
-  display: flex;
-  flex-direction: column;
+
+.project {
+  @extend %flex;
+  @extend %flex-column;
   align-items: center;
-  justify-content: center;
+  &__hidden {
+    display: none;
+  }
+}
+
+.portfolio-overlay {
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+  @extend %js-content-center;
 }
 
 .projects__tags {
@@ -29,6 +39,12 @@
   justify-content: space-between;
   gap: 2rem;
   object-fit: cover;
+}
+
+.project__content {
+  @extend %flex;
+  @extend %flex-column;
+  padding: 1.2rem 3.1rem;
 }
 
 .project-card {
@@ -57,14 +73,17 @@
 
 .project-title {
   color: $text-color;
-  text-align: center;
-  padding-top: 1.5rem;
+  padding: 1rem 0 0;
 }
 
 .project-details {
   color: $title-color;
   padding: 1.5rem 0;
-  text-align: center;
+}
+.project__tags {
+  .tag {
+    font-size: 1rem;
+  }
 }
 
 .portfolio-icons {
@@ -106,4 +125,5 @@
 .portfolio-title {
   padding-top: 2rem;
   color: $accent-color;
+  text-align: center;
 }
