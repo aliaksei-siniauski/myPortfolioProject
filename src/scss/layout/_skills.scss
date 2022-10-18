@@ -1,12 +1,31 @@
 .skills-wrapper {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   padding: 5rem 0;
-  justify-items: center;
+  justify-content: space-evenly;
+  @include media-mobile {
+    gap: 2rem;
+    justify-content: space-between;
+  }
 }
 
 .icon-title {
   color: $text-color;
   @extend %text-uppercase;
+}
+
+.skill {
+  @include media-mobile {
+    &:last-child,
+    &:nth-child(11),
+    &:nth-child(10),
+    &:nth-child(9),
+    &:nth-child(8),
+    &:nth-child(7),
+    &:nth-child(6),
+    &:nth-child(5) {
+      display: none;
+    }
+  }
 }

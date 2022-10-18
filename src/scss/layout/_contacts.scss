@@ -10,8 +10,15 @@
 
 .contacts__container {
   padding: 5rem 0;
+  @include media-small-desktop {
+    flex-direction: column;
+    gap: 3rem;
+  }
 }
-
+.contacts-map {
+  @include media-tablet {
+  }
+}
 .contacts__form {
   display: block;
   border: 2px solid $border-color;

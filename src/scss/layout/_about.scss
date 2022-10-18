@@ -1,26 +1,33 @@
-.hero__container {
+.about__container {
   padding: 8rem 0;
-  max-width: 95%;
+  max-width: 84%;
 }
 
-.hero-content {
+.about__content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1rem;
 }
 
-.hero-bio {
+.about__profile {
+  justify-self: center;
+}
+.about__bio {
   padding-inline: 1.2rem;
   box-shadow: 0px 2px 15px 2px ($hover-color);
   text-align: justify;
+  @include media-mobile {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
 }
 
-.hero__title {
+.about__title {
   position: relative;
   padding-bottom: 2rem;
 }
 
-.hero__img {
+.about__img {
   object-fit: cover;
   border-radius: 10%;
   -webkit-animation: filter-animation 5s infinite;

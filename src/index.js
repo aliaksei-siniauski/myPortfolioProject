@@ -1,5 +1,3 @@
-import "./scss/main.scss";
-
-import { validate } from "./js/formValidation.js";
-import { changeScrollPosition } from "./js/scroll.js";
-import { addClickHandler } from "./js/tags.js";
+import { validate } from "./js/FormValidation.js";
+import { changeScrollPosition } from "./js/Scroll.js";
+import { addClickHandler } from "./js/Tags.js";

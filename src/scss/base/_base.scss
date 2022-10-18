@@ -1,4 +1,5 @@
 body {
+  min-width: 375px;
   min-height: 100vh;
   @extend %flex;
   @extend %flex-column;

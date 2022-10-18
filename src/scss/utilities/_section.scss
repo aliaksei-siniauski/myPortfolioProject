@@ -1,6 +1,8 @@
 .section {
-  padding: 9rem;
-  padding-bottom: 9rem;
+  padding: 9rem 0 0;
+  @include media-mobile {
+    padding: 4rem 0 0;
+  }
 }
 
 .section-title {
@@ -9,4 +11,7 @@
   color: $accent-color;
   text-align: center;
   @extend %text-uppercase;
+  @include media-mobile {
+    font-size: 2.2rem;
+  }
 }

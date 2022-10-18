@@ -3,6 +3,15 @@
   display: inline-block;
   z-index: 1;
   padding: 1.3rem 3.2rem;
+  @include media-small-desktop {
+    padding: 1.3rem 2rem;
+  }
+  @include media-tablet {
+    padding: 1rem 1.5rem;
+  }
+  @include media-mobile {
+    padding: 1rem 0.5rem;
+  }
   background: transparent;
   color: $light-color;
   border: 1px solid $hover-color;

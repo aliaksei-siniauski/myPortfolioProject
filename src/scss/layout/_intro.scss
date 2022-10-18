@@ -1,6 +1,9 @@
 .intro__container {
   padding-top: 10rem;
   padding-bottom: 10rem;
+  @include media-mobile {
+    padding-bottom: 0;
+  }
 }
 
 .intro__inner {
@@ -17,7 +20,6 @@
 .intro__title {
   width: 100%;
   font-size: 4.5rem;
-  text-align: left;
   &::before {
     content: "";
     display: block;
@@ -25,12 +27,18 @@
     height: 32px;
     background-image: url("../icons/hello.svg");
   }
+  @include media-mobile {
+    font-size: 3.1rem;
+  }
 }
 
 .intro__subtitle {
   color: $text-color;
   $ff-second: "Roboto Mono", monospace;
   font-size: 3rem;
+  @include media-mobile {
+    font-size: 2rem;
+  }
 }
 
 .title-name {
@@ -40,4 +48,7 @@
 .subtitle-span {
   font-size: 2.4rem;
   opacity: 0.5;
+  @include media-mobile {
+    font-size: 1.4rem;
+  }
 }

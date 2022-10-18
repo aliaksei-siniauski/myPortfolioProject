@@ -27,26 +27,19 @@
   }
 }
 
-@mixin media-mobile {
-  @media (max-width: $mobile-width) {
+@mixin media-small-desktop {
+  @media (max-width: 976px) {
     @content;
   }
 }
-
 @mixin media-tablet {
-  @media (max-width: 768px) {
+  @media (max-width: 772px) {
     @content;
   }
 }
 
-@mixin media-mobile-big {
-  @media (max-width: 576px) {
-    @content;
-  }
-}
-
-@mixin media-mobile-small {
-  @media (max-width: 370px) {
+@mixin media-mobile {
+  @media (max-width: 480px) {
     @content;
   }
 }

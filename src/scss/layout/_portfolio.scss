@@ -35,16 +35,22 @@
 
 .projects-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 386px);
-  justify-content: space-between;
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, 430px);
+  gap: 1.5rem;
   object-fit: cover;
+  @include media-mobile {
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-content: center;
+  }
 }
 
 .project__content {
   @extend %flex;
   @extend %flex-column;
   padding: 1.2rem 3.1rem;
+  @include media-mobile {
+    padding: 1rem 2.1rem;
+  }
 }
 
 .project-card {
@@ -79,6 +85,9 @@
 .project-details {
   color: $title-color;
   padding: 1.5rem 0;
+  @include media-mobile {
+    font-size: 1.2rem;
+  }
 }
 .project__tags {
   .tag {

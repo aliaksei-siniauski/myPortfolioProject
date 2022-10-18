@@ -41,7 +41,7 @@ const filterProjectsBySelectedTag = (selectedTag) => {
     project.querySelectorAll(".tag").forEach((tag) => {
       if (tag.textContent === selectedTag) {
         project.classList.remove("project__hidden");
-      } else console.log("Something Doesn't work");
+      }
     });
   });
 };

@@ -21,6 +21,9 @@
   border-radius: $border-radius;
   padding-bottom: 2rem;
   @extend %transition;
+  @include media-mobile {
+    width: 150px;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -147,5 +150,9 @@
   &:hover {
     filter: invert(44%) sepia(57%) saturate(3026%) hue-rotate(200deg)
       brightness(98%) contrast(97%);
+  }
+  @include media-mobile {
+    width: 25px;
+    height: 25px;
   }
 }

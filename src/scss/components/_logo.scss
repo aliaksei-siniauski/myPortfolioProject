@@ -1,12 +1,18 @@
 .logo {
   display: flex;
   font-family: $ff-second;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   opacity: 0.8;
   @extend %transition;
   &:hover {
     opacity: 1;
     color: $text-color;
+  }
+  @include media-small-desktop {
+    font-size: 2.5rem;
+  }
+  @include media-mobile {
+    display: none;
   }
 }

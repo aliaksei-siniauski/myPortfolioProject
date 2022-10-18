@@ -1,5 +1,8 @@
 .nav {
   margin-left: auto;
+  @include media-small-desktop {
+    display: none;
+  }
 }
 
 .list {
@@ -10,6 +13,9 @@
 .list__item {
   padding-left: 3rem;
   font-size: 1.8rem;
+  @include media-small-desktop {
+    padding-left: 1.5rem;
+  }
 }
 
 .list__link {
