@@ -38,6 +38,13 @@
   grid-template-columns: repeat(auto-fit, 430px);
   gap: 1.5rem;
   object-fit: cover;
+  justify-content: space-evenly;
+  @include media-small-desktop {
+    grid-template-columns: repeat(auto-fit, 380px);
+  }
+  @include media-tablet {
+    grid-template-columns: 1fr 1fr;
+  }
   @include media-mobile {
     grid-template-columns: repeat(auto-fit, 350px);
     justify-content: center;
@@ -48,6 +55,10 @@
   @extend %flex;
   @extend %flex-column;
   padding: 1.2rem 3.1rem;
+  @include media-tablet {
+    padding: 2rem 1rem;
+  }
+
   @include media-mobile {
     padding: 1rem 2.1rem;
   }
@@ -80,13 +91,20 @@
 .project-title {
   color: $text-color;
   padding: 1rem 0 0;
+  @include media-tablet {
+    font-size: 1.5rem;
+  }
 }
 
 .project-details {
   color: $title-color;
   padding: 1.5rem 0;
   @include media-mobile {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  @include media-mobile {
+    font-size: 1rem;
   }
 }
 .project__tags {
