@@ -304,15 +304,24 @@ article {
 }
 
 .skills-wrapper {
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   padding: 5rem 0;
-  justify-content: space-evenly;
+  margin: 0 auto;
+  justify-content: center;
+}
+@media (max-width: 976px) {
+  .skills-wrapper {
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
 }
 @media (max-width: 515px) {
   .skills-wrapper {
-    gap: 2rem;
+    gap: 1rem;
     justify-content: space-between;
   }
 }
