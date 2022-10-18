@@ -1,19 +1,22 @@
 .footer__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+  @extend %js-content-center;
   padding-bottom: 2rem;
 }
 
 .footer__copyright {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
 }
 
 .copy {
   color: $text-color;
+  @include media-mobile-small {
+    font-size: 1.4rem;
+  }
 }
 
 .copy-symball {

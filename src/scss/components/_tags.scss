@@ -1,7 +1,7 @@
 .tags {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  @extend %flex;
+  @extend %flex-wrap;
+  @extend %al-items-center;
   gap: 2rem;
 }
 

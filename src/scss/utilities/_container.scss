@@ -1,11 +1,14 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
   @include media-tablet {
     max-width: 668px;
   }
   @include media-mobile {
     max-width: 400px;
+  }
+  @include media-mobile-small {
+    max-width: 340px;
   }
 }

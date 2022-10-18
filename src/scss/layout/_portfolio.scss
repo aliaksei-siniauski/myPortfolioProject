@@ -29,8 +29,8 @@
 }
 
 .projects__tags {
+  @extend %js-content-center;
   padding: 5rem 0;
-  justify-content: center;
 }
 
 .projects-content {
@@ -38,7 +38,7 @@
   grid-template-columns: repeat(auto-fit, 430px);
   gap: 1.5rem;
   object-fit: cover;
-  justify-content: space-evenly;
+  @extend %js-content-space-evently;
   @include media-small-desktop {
     grid-template-columns: repeat(auto-fit, 380px);
   }
@@ -48,6 +48,9 @@
   @include media-mobile {
     grid-template-columns: repeat(auto-fit, 350px);
     justify-content: center;
+  }
+  @include media-mobile-small {
+    grid-template-columns: repeat(auto-fit, minmax(233px, 1fr));
   }
 }
 
@@ -89,19 +92,18 @@
 }
 
 .project-title {
-  color: $text-color;
   padding: 1rem 0 0;
+  color: $text-color;
   @include media-tablet {
     font-size: 1.5rem;
   }
 }
 
 .project-details {
-  color: $title-color;
   padding: 1.5rem 0;
+  color: $title-color;
   @include media-mobile {
     font-size: 1.1rem;
-    text-align: center;
   }
   @include media-mobile {
     font-size: 1rem;
@@ -114,9 +116,9 @@
 }
 
 .portfolio-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %js-content-center;
   padding-top: 2rem;
   > * {
     margin-left: 0.5rem;
@@ -124,14 +126,14 @@
 }
 
 .portfolio-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %js-content-center;
   width: 50px;
   height: 50px;
   background: $theme-color;
   opacity: 0.5;
+  border-radius: 50%;
   @extend %transition;
   &:hover {
     background: $black-color;
