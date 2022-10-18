@@ -3,16 +3,38 @@
   @include media-small-desktop {
     display: none;
   }
+  &.open {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #337aa5f8;
+    z-index: 2;
+  }
 }
 
 .list {
   @extend %flex;
   @extend %al-items-center;
+  font-size: 1.8rem;
+  &.open {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-top: 10rem;
+    font-size: 3rem;
+  }
 }
 
 .list__item {
   padding-left: 3rem;
-  font-size: 1.8rem;
   @include media-small-desktop {
     padding-left: 1.5rem;
   }

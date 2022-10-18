@@ -1,11 +1,11 @@
 .skills-wrapper {
   width: 75%;
-  display: flex;
-  flex-wrap: wrap;
+  @extend %flex;
+  @extend %flex-wrap;
+  @extend %js-content-center;
   gap: 2rem;
-  padding: 5rem 0;
   margin: 0 auto;
-  justify-content: center;
+  padding: 5rem 0;
   @include media-small-desktop {
     width: 100%;
     justify-content: space-evenly;
@@ -14,6 +14,9 @@
   @include media-mobile {
     gap: 1rem;
     justify-content: space-between;
+  }
+  @include media-mobile-small {
+    justify-content: center;
   }
 }
 

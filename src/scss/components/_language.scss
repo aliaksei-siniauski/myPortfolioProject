@@ -7,6 +7,7 @@
   }
   @include media-mobile {
     margin-left: 0;
+    font-size: 1.2rem;
   }
 }
 .language {
@@ -17,5 +18,9 @@
   }
   &--active {
     color: $main-color;
+  }
+  @include media-mobile-small {
+    padding-left: 0;
+    padding-right: 0.6rem;
   }
 }

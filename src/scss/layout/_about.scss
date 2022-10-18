@@ -7,6 +7,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1rem;
+  @include media-mobile-small {
+    grid-template-columns: repeat(auto-fit, minmax(233px, 1fr));
+  }
 }
 
 .about__profile {
@@ -17,8 +20,11 @@
   box-shadow: 0px 2px 15px 2px ($hover-color);
   text-align: justify;
   @include media-mobile {
-    font-size: 1.4rem;
-    line-height: 1.4;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  @include media-mobile-small {
+    text-align: center;
   }
 }
 

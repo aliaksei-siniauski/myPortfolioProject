@@ -1,7 +1,7 @@
 .button {
   position: relative;
-  display: inline-block;
   z-index: 1;
+  display: inline-block;
   padding: 1.3rem 3.2rem;
   @include media-small-desktop {
     padding: 1.3rem 2rem;
@@ -10,7 +10,8 @@
     padding: 1rem 1.5rem;
   }
   @include media-mobile {
-    padding: 1rem 0.5rem;
+    padding: 0.8rem 0.4rem;
+    font-size: 1.4rem;
   }
   background: transparent;
   color: $light-color;

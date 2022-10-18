@@ -11,9 +11,12 @@
 .header__container {
   @extend %flex;
   @extend %al-items-center;
-  padding: 1rem 0;
-
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   @include media-mobile {
     justify-content: space-between;
+  }
+  @include media-mobile-small {
+    justify-content: start;
   }
 }

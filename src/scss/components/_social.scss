@@ -1,9 +1,9 @@
 .social-list {
-  padding: 2rem 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   max-width: 300px;
+  @extend %flex;
+  @extend %al-items-center;
+  justify-content: space-around;
+  padding: 2rem 0;
 }
 .social__item {
   padding-right: 1rem;
