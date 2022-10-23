@@ -524,12 +524,6 @@ article {
   filter: invert(44%) sepia(57%) saturate(3026%) hue-rotate(200deg) brightness(98%) contrast(97%);
 }
 
-.icon-githubs {
-  width: 30px;
-  height: 30px;
-  background: url("/src/icons/portfolio/github.svg");
-}
-
 .portfolio-title {
   padding-top: 2rem;
   color: #ffe100;
@@ -1002,7 +996,9 @@ article {
 }
 
 .icon-github {
-  background: url("../icons/skills/github.svg");
+  width: 30px;
+  height: 30px;
+  background: url("/src/icons/portfolio/github.svg");
 }
 
 .icon-discord {
