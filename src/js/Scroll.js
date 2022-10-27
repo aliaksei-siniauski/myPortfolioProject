@@ -1,4 +1,4 @@
-export { changeScrollPosition };
+export { changeScrollPosition, scrollToHeader };
 
 const changeScrollPosition = () => {
   const header = document.querySelector(".header");
@@ -12,4 +12,15 @@ const changeScrollPosition = () => {
   }
 };
 
+const scrollToHeader = () => {
+  const scrollUp = document.querySelector(".icon-arrow");
+  scrollUp.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  });
+};
+scrollToHeader();
 window.onscroll = changeScrollPosition;
