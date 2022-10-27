@@ -1,4 +1,4 @@
 import { validate } from "./js/FormValidation.js";
-import { changeScrollPosition } from "./js/Scroll.js";
+import { changeScrollPosition, scrollToHeader } from "./js/Scroll.js";
 import { addClickHandler } from "./js/Tags.js";
 import { switchMenu, closeMenu } from "./js/Burger.js";
