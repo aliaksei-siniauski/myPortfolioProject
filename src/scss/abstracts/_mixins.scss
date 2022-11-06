@@ -28,7 +28,7 @@
 }
 
 @mixin media-small-desktop {
-  @media (max-width: 976px) {
+  @media (max-width: 1090px) {
     @content;
   }
 }
