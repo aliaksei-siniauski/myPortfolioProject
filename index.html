@@ -26,33 +26,44 @@
         <nav class="nav">
           <ul class="list">
             <li class="list__item">
-              <a href="#intro" class="list__link list__link--active">Home</a>
+              <a
+                href="#intro"
+                class="list__link list__link--active"
+                data-i18="home"
+                >Home</a
+              >
             </li>
             <li class="list__item">
-              <a href="#about" class="list__link">About</a>
+              <a href="#about" class="list__link" data-i18="about">About</a>
             </li>
             <li class="list__item">
-              <a href="#skills" class="list__link">Skills</a>
+              <a href="#skills" class="list__link" data-i18="skills">Skills</a>
             </li>
             <li class="list__item">
-              <a href="#projects" class="list__link">Projects</a>
+              <a href="#projects" class="list__link" data-i18="projects"
+                >Projects</a
+              >
             </li>
             <li class="list__item">
-              <a href="#contacts" class="list__link">Contacts</a>
+              <a href="#contacts" class="list__link" data-i18="contacts"
+                >Contacts</a
+              >
             </li>
           </ul>
           <!-- close list -->
         </nav>
         <!-- close nav -->
         <div class="languages">
-          <span class="language language--active">EN</span>
-          <span class="language">PL</span>
-          <span class="language">BY</span>
-          <span class="language">RU</span>
+          <span class="language language--active lang-en">EN</span>
+          <span class="language lang-pl">PL</span>
+          <span class="language lang-by">BY</span>
+          <span class="language lang-ru">RU</span>
         </div>
         <!-- languages -->
         <div class="header__button">
-          <a class="button" href="cv.pdf" download>Download CV</a>
+          <a class="button" href="cv.pdf" data-i18="download" download
+            >Download CV</a
+          >
         </div>
         <!-- close header__button -->
         <div class="hamburger">
@@ -69,14 +80,20 @@
         <div class="container intro__container">
           <div class="intro__inner">
             <h1 class="intro__title">
-              <span>Hello</span><br />
-              <span>My name is</span>
-              <span class="title-name">Alexsi Siniauski</span>
+              <span data-i18="intro-title-hi">Hello</span><br />
+              <span data-i18="intro-title-name">My name is</span>
+              <span class="title-name" data-i18="intro-title-fullname"
+                >Alexsi Siniauski</span
+              >
             </h1>
             <p class="intro__subtitle">
-              I'm a self-taught front-end web developer.<br />I like to create
-              interactive and accessible websites and web apps.<br />
-              <span class="subtitle-span">Welcome to my portfolio webpage</span>
+              <span class="intro-subtitle-main" data-i18="intro-subtitle-info"
+                >I'm a self-taught front-end web developer.<br />I like to
+                create interactive and accessible websites and web apps.</span
+              >
+              <span class="subtitle-span" data-i18="intro-welcome"
+                >Welcome to my portfolio website</span
+              >
             </p>
           </div>
           <!-- close intro__inner -->
@@ -138,16 +155,15 @@
             <!-- clsoe about__profile -->
             <div class="about__bio">
               <h2 class="section-title about__title">More About me</h2>
-              <p class="about__text">
+              <p class="about__text" data-i18="about-text">
                 I'm a trustworthy, self-motivated front-end web developer. My
-                goal is create things that make life better for everyone,
-                everywhere. I have experience working with HTML/CSS/JavaScript.
-                Take a look at my pet projects. Every new project develops my
-                skills into a well-rounded
-                <span class="text-important">front-end web developer.</span
-                ><br />
-                Get in touch with me. I'm always ready to find creative and
-                innovative solutions for new challenges!!!
+                goal is to be a professional web developer who creates things
+                that make life better for everyone, everywhere. I have
+                experience working with HTML/CSS/JavaScript. Take a look at my
+                pet projects. Every new project develops my skills into a
+                well-rounded front-end web developer. Get in touch with me. I'm
+                always ready to find creative and innovative solutions for new
+                challenges!!!
               </p>
             </div>
             <!-- close about-bio -->
@@ -158,7 +174,7 @@
       </section>
       <section id="skills" class="section skills">
         <div class="container">
-          <h2 class="section-title">My Skills</h2>
+          <h2 class="section-title" data-i18="skills-title">My Skills</h2>
           <div class="skills-wrapper">
             <div class="skill">
               <span class="icon-square">
@@ -251,12 +267,20 @@
       </section>
       <section id="projects" class="section projects">
         <div class="container projects__container">
-          <h2 class="section-title">Some of My projects</h2>
+          <h2 class="section-title" data-i18="projects-title">
+            Some of My projects
+          </h2>
           <div class="projects__tags tags">
-            <span class="tag tag--active">All</span>
-            <span class="tag tag--bordered">Current project</span>
-            <span class="tag tag--bordered">WebSite</span>
-            <span class="tag tag--bordered">Web Application</span>
+            <span class="tag tag--active" data-i18="tag-all">All</span>
+            <span class="tag tag--bordered" data-i18="tag-current"
+              >Current project</span
+            >
+            <span class="tag tag--bordered" data-i18="tag-website"
+              >WebSite</span
+            >
+            <span class="tag tag--bordered" data-i18="tag-app"
+              >Web Application</span
+            >
           </div>
           <!-- close tags -->
           <div class="projects-content">
@@ -268,16 +292,22 @@
                 alt="portfolio-1"
               />
               <div class="project__content">
-                <h4 class="project-title">Travel Project</h4>
-                <p class="project-details">
-                  Travel planning adaptive and interactive landing page
+                <h4 class="project-title" data-i18="project-1">
+                  Travel Project
+                </h4>
+                <p class="project-details" data-i18="project-1-details">
+                  Travel planning adaptive and interactive website
                 </p>
                 <div class="project__tags tags">
-                  <span class="tag tag--bordered">WebSite</span>
+                  <span class="tag tag--bordered" data-i18="tag-website"
+                    >WebSite</span
+                  >
                 </div>
               </div>
               <div class="overlay portfolio-overlay">
-                <h3 class="portfolio-title">Project Source</h3>
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
                 <div class="portfolio-icons">
                   <a
                     class="portfolio-link"
@@ -309,16 +339,22 @@
                 alt="portfolio-2"
               />
               <div class="project__content">
-                <h4 class="project-title">Personal Website Project</h4>
-                <p class="project-details">
+                <h4 class="project-title" data-i18="project-2">
+                  Personal Website Project
+                </h4>
+                <p class="project-details" data-i18="project-2-details">
                   Personal responsive and interactive website
                 </p>
                 <div class="project__tags tags">
-                  <span class="tag tag--bordered">WebSite</span>
+                  <span class="tag tag--bordered" data-i18="tag-website"
+                    >WebSite</span
+                  >
                 </div>
               </div>
               <div class="overlay portfolio-overlay">
-                <h3 class="portfolio-title">Project Source</h3>
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
                 <div class="portfolio-icons">
                   <a
                     class="portfolio-link"
@@ -350,17 +386,25 @@
                 alt="portfolio-3"
               />
               <div class="project__content">
-                <h4 class="project-title">Momentum Project</h4>
-                <p class="project-details">
+                <h4 class="project-title" data-i18="project-3">
+                  Momentum Project
+                </h4>
+                <p class="project-details" data-i18="project-3-details">
                   A simple copy of the Chrome Web Store app of the same name
                 </p>
                 <div class="project__tags tags">
-                  <span class="tag tag--bordered">Web Application</span>
-                  <span class="tag tag--bordered">Current project</span>
+                  <span class="tag tag--bordered" data-i18="tag-app"
+                    >Web Application</span
+                  >
+                  <span class="tag tag--bordered" data-i18="tag-current"
+                    >Current project</span
+                  >
                 </div>
               </div>
               <div class="overlay portfolio-overlay">
-                <h3 class="portfolio-title">Project Source</h3>
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
                 <div class="portfolio-icons">
                   <a
                     class="portfolio-link"
@@ -392,16 +436,22 @@
                 alt="portfolio-4"
               />
               <div class="project__content">
-                <h4 class="project-title">Photography Portfolio Project</h4>
-                <p class="project-details">
+                <h4 class="project-title" data-i18="project-4">
+                  Photography Portfolio Project
+                </h4>
+                <p class="project-details" data-i18="project-4-details">
                   Photographer portfolio responsive and interactive landing page
                 </p>
                 <div class="project__tags tags">
-                  <span class="tag tag--bordered">WebSite</span>
+                  <span class="tag tag--bordered" data-i18="tag-website"
+                    >WebSite</span
+                  >
                 </div>
               </div>
               <div class="overlay portfolio-overlay">
-                <h3 class="portfolio-title">Project Source</h3>
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
                 <div class="portfolio-icons">
                   <a
                     class="portfolio-link"
@@ -433,17 +483,25 @@
                 alt="portfolio-5"
               />
               <div class="project__content">
-                <h4 class="project-title">Animal Shelter Project</h4>
-                <p class="project-details">
+                <h4 class="project-title" data-i18="project-5">
+                  Animal Shelter Project
+                </h4>
+                <p class="project-details" data-i18="project-5-details">
                   Animal Shelter responsive and interactive website
                 </p>
                 <div class="project__tags tags">
-                  <span class="tag tag--bordered">WebSite</span>
-                  <span class="tag tag--bordered">Current project</span>
+                  <span class="tag tag--bordered" data-i18="tag-website"
+                    >WebSite</span
+                  >
+                  <span class="tag tag--bordered" data-i18="tag-current"
+                    >Current project</span
+                  >
                 </div>
               </div>
               <div class="overlay portfolio-overlay">
-                <h3 class="portfolio-title">Project Source</h3>
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
                 <div class="portfolio-icons">
                   <a
                     class="portfolio-link"
@@ -475,16 +533,22 @@
                 alt="portfolio-6"
               />
               <div class="project__content">
-                <h4 class="project-title">Online-zoo Project</h4>
-                <p class="project-details">
+                <h4 class="project-title" data-i18="project-6">
+                  Online-zoo Project
+                </h4>
+                <p class="project-details" data-i18="project-6-details">
                   Online-zoo responsive and interactive website
                 </p>
                 <div class="project__tags tags">
-                  <span class="tag tag--bordered">WebSite</span>
+                  <span class="tag tag--bordered" data-i18="tag-website"
+                    >WebSite</span
+                  >
                 </div>
               </div>
               <div class="overlay portfolio-overlay">
-                <h3 class="portfolio-title">Project Source</h3>
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
                 <div class="portfolio-icons">
                   <a
                     class="portfolio-link"
@@ -516,17 +580,25 @@
                 alt="portfolio-6"
               />
               <div class="project__content">
-                <h4 class="project-title">Plants Project</h4>
-                <p class="project-details">
+                <h4 class="project-title" data-i18="project-7">
+                  Plants Project
+                </h4>
+                <p class="project-details" data-i18="project-7-details">
                   Plants responsive and interactive website
                 </p>
                 <div class="project__tags tags">
-                  <span class="tag tag--bordered">WebSite</span>
-                  <span class="tag tag--bordered">Current project</span>
+                  <span class="tag tag--bordered" data-i18="tag-website"
+                    >WebSite</span
+                  >
+                  <span class="tag tag--bordered" data-i18="tag-current"
+                    >Current project</span
+                  >
                 </div>
               </div>
               <div class="overlay portfolio-overlay">
-                <h3 class="portfolio-title">Project Source</h3>
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
                 <div class="portfolio-icons">
                   <a
                     class="portfolio-link"
@@ -558,17 +630,23 @@
                 alt="portfolio-8"
               />
               <div class="project__content">
-                <h4 class="project-title">Color-flipper Project</h4>
-                <p class="project-details">
+                <h4 class="project-title" data-i18="project-8">
+                  Color-flipper Project
+                </h4>
+                <p class="project-details" data-i18="project-8-details">
                   A mini javascript project in which you will change the
                   background to a random color
                 </p>
                 <div class="project__tags tags">
-                  <span class="tag tag--bordered">Web Application</span>
+                  <span class="tag tag--bordered" data-i18="tag-app"
+                    >Web Application</span
+                  >
                 </div>
               </div>
               <div class="overlay portfolio-overlay">
-                <h3 class="portfolio-title">Project Source</h3>
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
                 <div class="portfolio-icons">
                   <a
                     class="portfolio-link"
@@ -591,7 +669,7 @@
               </div>
               <!-- close overlay -->
             </div>
-            <div class="project project-card color-flipper">
+            <div class="project project-card">
               <img
                 class="project-img"
                 src="src/images/portfolio-9.jpg"
@@ -599,16 +677,22 @@
                 alt="portfolio-8"
               />
               <div class="project__content">
-                <h4 class="project-title">Movie project</h4>
-                <p class="project-details">
+                <h4 class="project-title" data-i18="project-9">
+                  Movie project
+                </h4>
+                <p class="project-details" data-i18="project-9-details">
                   A simple movie app with Vanilla JavaScript
                 </p>
                 <div class="project__tags tags">
-                  <span class="tag tag--bordered">Web Application</span>
+                  <span class="tag tag--bordered" data-i18="tag-app"
+                    >Web Application</span
+                  >
                 </div>
               </div>
               <div class="overlay portfolio-overlay">
-                <h3 class="portfolio-title">Project Source</h3>
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
                 <div class="portfolio-icons">
                   <a
                     class="portfolio-link"
@@ -637,7 +721,9 @@
       </section>
       <section id="contacts" class="section contacts">
         <div class="container">
-          <h2 class="section-title">Get in touch with me</h2>
+          <h2 class="section-title" data-i18="contacts-title">
+            Get in touch with me
+          </h2>
           <div class="layout-2-columns contacts__container">
             <div class="contacts-map">
               <div
@@ -705,7 +791,9 @@
               </form>
               <!-- close form -->
               <div class="contacts__button">
-                <button type="submit" class="button">Send Message</button>
+                <button type="submit" class="button" data-i18="send-message">
+                  Send Message
+                </button>
               </div>
             </div>
             <!-- close cotact-form -->

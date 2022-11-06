@@ -1,3 +1,5 @@
+export { i18Obj, getTranslate, language, langEn, langBy };
+
 const i18Obj = {
   en: {
     home: "Home",
@@ -55,13 +57,14 @@ const i18Obj = {
     "intro-title-hi": "Вітаю",
     "intro-title-name": "Мяне завуць",
     "intro-title-fullname": "Аляксей Сіняўскі",
-    "intro-subtitle":
-      "I'm a self-taught front-end web developer. I like to create interactive and accessible websites and web apps.",
-    " about-title": "Больш пра мяне",
+    "intro-subtitle-info":
+      "Я вэб-распрацоўшчык самавук. Мне падабаецца ствараць інтэрактыўныя і даступныя вэб-сайты і вэб-прылады",
+    "intro-welcome": "Рады вас бачыць на сваём сайце",
+    "about-title": "Больш пра мяне",
     "about-text":
-      "I'm a trustworthy, self-motivated front-end web developer. My goal is create things that make life better for everyone, everywhere. I have experience working with HTML/CSS/JavaScript. Take a look at my pet projects. Every new project develops my skills into a well-rounded.   Get in touch with me. I'm always ready to find creative and innovative solutions for new challenges!!!",
+      "Я надзейны, мэтанакіраваны вэб-распрацоўшчык. Мая мэта – стаць прафесійным вэб-распрацоўшчыкам, які стварае рэчы, што робяць жыццё лепшым для ўсіх і ўсюды. У мяне ёсць досвед працы з HTML/CSS/JavaScript. Зірніце на мае праекты. Кожны новы праект паляпшае мае навыкі і прыбляжае мяне да маёй мэты. Звяжыцеся са мной. Я заўсёды гатовы да пошуку творчых і наватарскіх падыходаў для рашэння новых задач!!!",
     "about-me-importnat": "front-end web developer.",
-    "skills-title": "Мае Здольнасці",
+    "skills-title": "Мае Навыкі",
     "projects-title": "Некаторыя з маіх праектаў",
     "tag-all": "Усе",
     "tag-current": "Актуальны праект",
@@ -70,7 +73,7 @@ const i18Obj = {
     "tag-source": "Код",
     "project-1": "Праект 'Падарожжа'",
     "project-1-details":
-      "Адаптыўны і інтэрактыўны landing page планавання падарожжаў",
+      "Адаптыўны і інтэрактыўны вэб-сайт планавання падарожжаў",
     "project-2": "Праект 'Асабісты сайт-партфоліа'",
     "project-2-details": "Персанальны адаптыўны і інтэрактыўны вэб-сайт",
     "project-3": "Праект 'Momentum'",
@@ -89,7 +92,27 @@ const i18Obj = {
     "project-8": "Праект 'Color-flipper'",
     "project-8-details":
       "Міні-праект, у якім можна змяніць фон картак на выпадковы колер",
+    "project-9": "Праект 'Кіно'",
+    "project-9-details":
+      "Просты дададак для пошука фільмаў зроблены з дапамогай Vanilla JavaScript",
     "contacts-title": "Звяжыцеся са мной",
     "send-message": "Адправіць паведамленне",
   },
 };
+
+const langEn = document.querySelector(".lang-en");
+const langBy = document.querySelector(".lang-by");
+
+let language;
+
+const getTranslate = (language) => {
+  const dataTranslate = document.querySelectorAll("[data-i18]");
+
+  dataTranslate.forEach((el) => {
+    let key = el.dataset.i18;
+    el.textContent = i18Obj[language][key];
+  });
+};
+
+langEn.addEventListener("click", () => getTranslate((language = "en")));
+langBy.addEventListener("click", () => getTranslate((language = "by")));

@@ -6,7 +6,10 @@ const addClickHandler = () => {
       let clickedTag = e.target;
       removeSelectedTag();
       selectClikedTag(clickedTag);
-      if (clickedTag.textContent === "All") {
+      if (
+        clickedTag.textContent === "All" ||
+        clickedTag.textContent === "Усе"
+      ) {
         showAllProjects();
       } else {
         filterProjectsBySelectedTag(clickedTag.innerText);
