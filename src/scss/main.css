@@ -2,15 +2,38 @@
 /* Size */
 /* font */
 /* Fonts */
-.tags, .social__link, .social-list, .languages, .list, .footer__copyright, .footer__container, .portfolio-link, .portfolio-icons, .project__content, .portfolio-overlay, .project, .skills-wrapper, .intro__inner, .header__container, body {
+.tags,
+.social__link,
+.social-list,
+.languages,
+.list,
+.footer__copyright,
+.footer__container,
+.portfolio-link,
+.portfolio-icons,
+.project__content,
+.portfolio-overlay,
+.project,
+.skills-wrapper,
+.intro__inner,
+.header__container,
+body {
   display: flex;
 }
 
-.tags, .skills-wrapper {
+.tags,
+.skills-wrapper {
   flex-wrap: wrap;
 }
 
-.hamburger, .footer__copyright, .footer__container, .project__content, .portfolio-overlay, .project, .intro__inner, body {
+.hamburger,
+.footer__copyright,
+.footer__container,
+.project__content,
+.portfolio-overlay,
+.project,
+.intro__inner,
+body {
   flex-direction: column;
 }
 
@@ -22,23 +45,65 @@ body {
   justify-content: space-evenly;
 }
 
-.social__link, .hamburger, .footer__container, .portfolio-link, .portfolio-icons, .projects__tags, .portfolio-overlay, .skills-wrapper, .intro__inner {
+.social__link,
+.hamburger,
+.footer__container,
+.portfolio-link,
+.portfolio-icons,
+.projects__tags,
+.portfolio-overlay,
+.skills-wrapper,
+.intro__inner {
   justify-content: center;
 }
 
-.tags, .social__link, .social-list, .hamburger, .list, .footer__copyright, .footer__container, .portfolio-link, .portfolio-icons, .portfolio-overlay, .intro__inner, .header__container {
+.tags,
+.social__link,
+.social-list,
+.hamburger,
+.list,
+.footer__copyright,
+.footer__container,
+.portfolio-link,
+.portfolio-icons,
+.portfolio-overlay,
+.intro__inner,
+.header__container {
   align-items: center;
 }
 
-.tag, .icon-arrow, .languages, .list__link, .button, .project-card {
+.tag,
+.icon-arrow,
+.languages,
+.list__link,
+.button,
+.project-card {
   cursor: pointer;
 }
 
-.icon-title, .intro__inner, .section-title {
+.icon-title,
+.intro__inner,
+.section-title {
   text-transform: uppercase;
 }
 
-.tag--bordered, .tag, .social__link, .icon-square:hover .icon-title, .icon-square:before, .icon-square, .language, .logo, .list__link--active, .list__link:hover::after, .list__link, .button::after, .button, .portfolio-link, .project-card:hover .overlay, .project-card, .about__img {
+.tag--bordered,
+.tag,
+.social__link,
+.icon-square:hover .icon-title,
+.icon-square:before,
+.icon-square,
+.language,
+.logo,
+.list__link--active,
+.list__link:hover::after,
+.list__link,
+.button::after,
+.button,
+.portfolio-link,
+.project-card:hover .overlay,
+.project-card,
+.about__img {
   transition: 0.5s ease-in-out;
 }
 
@@ -92,8 +157,8 @@ li {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list],
+ul[role="list"],
+ol[role="list"],
 li {
   list-style: none;
 }
@@ -149,8 +214,8 @@ article {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -390,14 +455,26 @@ article {
 }
 
 @media (max-width: 515px) {
-  .skill:last-child, .skill:nth-child(11), .skill:nth-child(10), .skill:nth-child(9), .skill:nth-child(8), .skill:nth-child(7), .skill:nth-child(6), .skill:nth-child(5) {
+  .skill:last-child,
+  .skill:nth-child(11),
+  .skill:nth-child(10),
+  .skill:nth-child(9),
+  .skill:nth-child(8),
+  .skill:nth-child(7),
+  .skill:nth-child(6),
+  .skill:nth-child(5) {
     display: none;
   }
 }
 
 .overlay {
   position: absolute;
-  background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
   width: 100%;
   height: 100%;
   top: 0;
@@ -526,7 +603,8 @@ article {
   opacity: 1;
 }
 .portfolio-link:hover .portfolio-icon {
-  filter: invert(44%) sepia(57%) saturate(3026%) hue-rotate(200deg) brightness(98%) contrast(97%);
+  filter: invert(44%) sepia(57%) saturate(3026%) hue-rotate(200deg)
+    brightness(98%) contrast(97%);
 }
 
 .portfolio-title {
@@ -636,7 +714,8 @@ article {
   background: transparent;
   color: #ffffff;
   border: 1px solid #8892af;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 0.5rem;
 }
 @media (max-width: 1090px) {
@@ -902,7 +981,18 @@ article {
   }
 }
 
-.icon-accessibility, .icon-responsive, .icon-git, .icon-webpack, .icon-gulp, .icon-figma, .icon-photoshop, .icon-bootstrap, .icon-sass, .icon-js, .icon-css, .icon-html {
+.icon-accessibility,
+.icon-responsive,
+.icon-git,
+.icon-webpack,
+.icon-gulp,
+.icon-figma,
+.icon-photoshop,
+.icon-bootstrap,
+.icon-sass,
+.icon-js,
+.icon-css,
+.icon-html {
   width: 95px;
   height: 150px;
   background-position: center;
@@ -1045,7 +1135,8 @@ article {
   background: url("../icons/arrow.svg");
 }
 .icon-arrow:hover {
-  filter: invert(44%) sepia(57%) saturate(3026%) hue-rotate(200deg) brightness(98%) contrast(97%);
+  filter: invert(44%) sepia(57%) saturate(3026%) hue-rotate(200deg)
+    brightness(98%) contrast(97%);
 }
 @media (max-width: 515px) {
   .icon-arrow {
@@ -1078,7 +1169,8 @@ article {
   opacity: 1;
 }
 .social__link:hover .social-icon {
-  filter: invert(44%) sepia(57%) saturate(3026%) hue-rotate(200deg) brightness(98%) contrast(97%);
+  filter: invert(44%) sepia(57%) saturate(3026%) hue-rotate(200deg)
+    brightness(98%) contrast(97%);
 }
 
 .social-icon {
