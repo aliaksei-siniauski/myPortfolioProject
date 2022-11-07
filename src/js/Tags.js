@@ -8,7 +8,9 @@ const addClickHandler = () => {
       selectClikedTag(clickedTag);
       if (
         clickedTag.textContent === "All" ||
-        clickedTag.textContent === "Усе"
+        clickedTag.textContent === "Wszystko" ||
+        clickedTag.textContent === "Усе" ||
+        clickedTag.textContent === "Все"
       ) {
         showAllProjects();
       } else {
