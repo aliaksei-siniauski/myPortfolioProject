@@ -25,6 +25,7 @@ const removeSelectedTag = () => {
     tag.classList.add("tag--bordered");
   });
 };
+
 const selectClikedTag = (clickedTag) => {
   clickedTag.classList.remove("tag--bordered");
   clickedTag.classList.add("tag--active");
