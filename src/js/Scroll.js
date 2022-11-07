@@ -1,5 +1,4 @@
 export { changeScrollPosition, scrollToHeader };
-import { addClickHandlerToNavItems } from "./Nav.js";
 
 const changeScrollPosition = () => {
   const header = document.querySelector(".header");
