@@ -12,10 +12,10 @@ const i18Obj = {
     "intro-title-name": "My name is",
     "intro-title-fullname": "Alexsi Siniauski",
     "intro-subtitle-info":
-      "I'm a self-taught front-end web developer.I like to create interactive and accessible websites and web apps.",
+      "I'm a self-taught front-end web developer. I like to create interactive and accessible websites and web apps.",
     "about-title": "More About me",
     "about-text":
-      "I'm a trustworthy, self-motivated front-end web developer. My goal is to create things that make life better for everyone, everywhere. I have experience working with HTML/CSS/JavaScript. Take a look at my pet projects. Every new project develops my skills into a well-rounded one.   Get in touch with me. I'm always ready to find creative and innovative solutions for new challenges!!!",
+      "I'm a trustworthy, self-motivated front-end web developer. My goal is to be a professional front-end web developer who creates things that make life better for everyone, everywhere. I have experience working with HTML/CSS/JavaScript. Take a look at my pet projects. Every new project develops my skills into a well-rounded front-end web developer. Get in touch with me. I'm always ready to find creative and innovative solutions for new challenges!!!",
     "about-me-importnat": "front-end web developer.",
     "intro-welcome": "Welcome to my portfolio website",
     "skills-title": "My Skills",
@@ -64,7 +64,7 @@ const i18Obj = {
       "Jestem samoukiem front-end web developerem. Lubię tworzyć interaktywne i przystępne strony oraz aplikacje internetowe.",
     "about-title": "Więcej o mnie",
     "about-text":
-      "Jestem godnym zaufania, zmotywowanym programistą front-endowym. Moim celem jest tworzenie rzeczy, które uczynią życie lepszym dla wszystkich i wszędzie. Mam doświadczenie w pracy z HTML/CSS/JavaScript. Zobacz moje projekty. Każdy nowy projekt kompleksowo rozwija moje umiejętności. Bądź ze mną w kontakcie. Zawsze jestem gotowym znaleźć kreatywne i innowacyjne rozwiązania dla nowych wyzwań!!!",
+      "Jestem godnym zaufania, zmotywowanym front-end programistą. Moim celem jest bycie profesjonalnym front-end web developerem, który tworzy rzeczy tworzenie  rzeczy, które uczynią życie lepszym dla wszystkich i wszędzie. Mam doświadczenie w pracy z HTML/CSS/JavaScript. Zobacz moje projekty. Każdy nowy projekt kompleksowo rozwija moje umiejętności. Bądź ze mną w kontakcie. Zawsze jestem gotowym znaleźć kreatywne i innowacyjne rozwiązania dla nowych wyzwań!!!",
     "intro-welcome": "Witam na mojej stronie internetowej",
     "skills-title": "Moje umiejętności",
     "projects-title": "Niektóre z moich projektów",
@@ -113,12 +113,11 @@ const i18Obj = {
     "intro-title-name": "Мяне завуць",
     "intro-title-fullname": "Аляксей Сіняўскі",
     "intro-subtitle-info":
-      "Я вэб-распрацоўшчык самавук. Мне падабаецца ствараць інтэрактыўныя і даступныя вэб-сайты і вэб-прылады",
+      "Я front-end вэб-распрацоўшчык самавук. Мне падабаецца ствараць інтэрактыўныя і даступныя вэб-сайты і вэб-прылады",
     "intro-welcome": "Рады вас бачыць на сваём сайце",
     "about-title": "Больш пра мяне",
     "about-text":
-      "Я надзейны, мэтанакіраваны вэб-распрацоўшчык. Мая мэта – стаць прафесійным вэб-распрацоўшчыкам, які стварае рэчы, што робяць жыццё лепшым для ўсіх і ўсюды. У мяне ёсць досвед працы з HTML/CSS/JavaScript. Зірніце на мае праекты. Кожны новы праект паляпшае мае навыкі і прыбляжае мяне да маёй мэты. Звяжыцеся са мной. Я заўсёды гатовы да пошуку творчых і наватарскіх падыходаў для рашэння новых задач!!!",
-    "about-me-importnat": "front-end web developer.",
+      "Я адказны, мэтанакіраваны front-end вэб-распрацоўшчык. Мая мэта – стаць прафесійным front-end вэб-распрацоўшчыкам, які стварае рэчы, якия робяць жыццё лепшым для ўсіх і ўсюды. У мяне ёсць досвед працы з HTML/CSS/JavaScript. Зірніце на мае праекты. Кожны новы праект паляпшае мае навыкі і прыбляжае мяне да маёй мэты. Звяжыцеся са мной. Я заўсёды гатовы да пошуку творчых і наватарскіх падыходаў для рашэння новых задач!!!",
     "skills-title": "Мае Навыкі",
     "projects-title": "Некаторыя з маіх праектаў",
     "tag-all": "Усе",
@@ -164,10 +163,10 @@ const i18Obj = {
     "intro-title-name": "Меня зовут",
     "intro-title-fullname": "Аляксей Синявский",
     "intro-subtitle-info":
-      "Я веб-разработчик-самоучка. Мне нравится создавать интерактивные и доступные веб-сайты и веб-приложения.",
+      "Я front-end веб-разработчик-самоучка. Мне нравится создавать интерактивные и доступные веб-сайты и веб-приложения.",
     "about-title": "Больше обо мне",
     "about-text":
-      "Я порядочный, целеустремленный веб-разработчик. Моя цель — создавать вещи, которые делают жизнь лучше для всех и везде. У меня есть опыт работы с HTML/CSS/JavaScript. Взгляните на мои проекты. Каждый новый проект делает мои навыки всесторонне развитыми. Свяжитесь со мной. Я всегда готов найти креативные и нестандартные решения для новых задач!!!",
+      "Я порядочный, целеустремленный веб-разработчик. Моя цель Моя цель — стать профессиональным веб-разработчиком, который создает вещи, што помогут сделать жизнь лучше для всех и везде. У меня есть опыт работы с HTML/CSS/JavaScript. Взгляните на мои проекты. Каждый новый проект делает мои навыки всесторонне развитыми. Свяжитесь со мной. Я всегда готов найти креативные и нестандартные решения для новых задач!!!",
     "about-me-importnat": "front-end web developer.",
     "intro-welcome": "Добро пожаловать на мой сайт",
     "skills-title": "Мои навыки",
