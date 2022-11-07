@@ -8,7 +8,9 @@ const addClickHandler = () => {
       selectClikedTag(clickedTag);
       if (
         clickedTag.textContent === "All" ||
-        clickedTag.textContent === "Усе"
+        clickedTag.textContent === "Wszystko" ||
+        clickedTag.textContent === "Усе" ||
+        clickedTag.textContent === "Все"
       ) {
         showAllProjects();
       } else {
@@ -25,6 +27,7 @@ const removeSelectedTag = () => {
     tag.classList.add("tag--bordered");
   });
 };
+
 const selectClikedTag = (clickedTag) => {
   clickedTag.classList.remove("tag--bordered");
   clickedTag.classList.add("tag--active");
