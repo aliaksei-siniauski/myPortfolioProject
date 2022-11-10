@@ -12,10 +12,10 @@ const i18Obj = {
     "intro-title-name": "My name is",
     "intro-title-fullname": "Alexsi Siniauski",
     "intro-subtitle-info":
-      "I'm a self-taught front-end web developer. I like to create interactive and accessible websites and web apps.",
+      "I'm a self-taught frontend web developer. I like to create interactive and accessible websites and web apps.",
     "about-title": "More About me",
     "about-text":
-      "I'm a trustworthy, self-motivated front-end web developer. My goal is to be a professional front-end web developer who creates things that make life better for everyone, everywhere. I have experience working with HTML/CSS/JavaScript. Take a look at my pet projects. Every new project develops my skills into a well-rounded front-end web developer. Get in touch with me. I'm always ready to find creative and innovative solutions for new challenges!!!",
+      "I'm a trustworthy, self-motivated frontend web developer. My goal is to be a professional frontend web developer who creates things that make life better for everyone, everywhere. I have experience working with HTML/CSS/JavaScript. Take a look at my pet projects. Every new project develops my skills into a well-rounded frontend web developer. Get in touch with me. I'm always ready to find creative and innovative solutions for new challenges!!!",
     "about-me-importnat": "front-end web developer.",
     "intro-welcome": "Welcome to my portfolio website",
     "skills-title": "My Skills",
