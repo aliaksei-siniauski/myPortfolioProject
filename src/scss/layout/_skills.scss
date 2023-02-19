@@ -5,16 +5,19 @@
   @extend %js-content-center;
   gap: 2rem;
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 2rem 0;
+
   @include media-small-desktop {
     width: 100%;
     justify-content: space-evenly;
     gap: 2rem;
   }
+
   @include media-mobile {
     gap: 1rem;
     justify-content: space-between;
   }
+
   @include media-mobile-small {
     justify-content: center;
   }
@@ -27,6 +30,7 @@
 
 .skill {
   @include media-mobile {
+
     &:last-child,
     &:nth-child(11),
     &:nth-child(10),

@@ -1,5 +1,6 @@
 .section {
   padding: 9rem 0 0;
+
   @include media-mobile {
     padding: 4rem 0 0;
   }
@@ -11,7 +12,16 @@
   color: $accent-color;
   text-align: center;
   @extend %text-uppercase;
+
   @include media-mobile {
     font-size: 2rem;
   }
+}
+
+.section-line {
+  display: block;
+  width: 15rem;
+  height: 2px;
+  background-color: $accent-color;
+  margin: 5px auto;
 }
