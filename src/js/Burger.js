@@ -11,7 +11,7 @@ const switchMenu = () => {
     nav.classList.toggle("open");
     navList.classList.toggle("open");
     body.classList.toggle("stop-scrolling");
-  }, 500);
+  }, 300);
 };
 hamburger.addEventListener("click", switchMenu);
 
@@ -21,6 +21,6 @@ const closeMenu = () => {
     nav.classList.remove("open");
     navList.classList.remove("open");
     body.classList.remove("stop-scrolling");
-  }, 1000);
+  }, 300);
 };
 navItems.forEach((el) => el.addEventListener("click", closeMenu));

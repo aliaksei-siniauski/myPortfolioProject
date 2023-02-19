@@ -1,11 +1,9 @@
 .overlay {
   position: absolute;
-  background: linear-gradient(
-    109.6deg,
-    rgb(36, 45, 57) 11.2%,
-    rgb(16, 37, 60) 51.2%,
-    rgb(0, 0, 0) 98.6%
-  );
+  background: linear-gradient(109.6deg,
+      rgb(36, 45, 57) 11.2%,
+      rgb(16, 37, 60) 51.2%,
+      rgb(0, 0, 0) 98.6%);
   width: 100%;
   height: 100%;
   top: 0;
@@ -16,6 +14,7 @@
   @extend %flex;
   @extend %flex-column;
   align-items: center;
+
   &__hidden {
     display: none;
   }
@@ -30,34 +29,24 @@
 
 .projects__tags {
   @extend %js-content-center;
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .projects-content {
+  width: 80vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 430px);
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem 2rem;
+  margin: 0 auto;
   object-fit: cover;
   @extend %js-content-space-evently;
-  @include media-small-desktop {
-    grid-template-columns: repeat(auto-fit, 380px);
-  }
-  @include media-tablet {
-    grid-template-columns: 1fr 1fr;
-  }
-  @include media-mobile {
-    grid-template-columns: repeat(auto-fit, 350px);
-    justify-content: center;
-  }
-  @include media-mobile-small {
-    grid-template-columns: repeat(auto-fit, minmax(233px, 1fr));
-  }
 }
 
 .project__content {
   @extend %flex;
   @extend %flex-column;
   padding: 1.2rem 3.1rem;
+
   @include media-tablet {
     padding: 2rem 1rem;
   }
@@ -75,8 +64,10 @@
   filter: drop-shadow(0px 4px 4px hsl(189, 79%, 24%));
   @extend %transition;
   @extend %cursor-pointer;
+
   &:hover {
     border-color: $main-color;
+
     .overlay {
       opacity: 1;
       @extend %transition;
@@ -94,6 +85,7 @@
 .project-title {
   padding: 1rem 0 0;
   color: $text-color;
+
   @include media-tablet {
     font-size: 1.5rem;
   }
@@ -102,13 +94,16 @@
 .project-details {
   padding: 1.5rem 0;
   color: $title-color;
+
   @include media-mobile {
     font-size: 1.1rem;
   }
+
   @include media-mobile {
     font-size: 1rem;
   }
 }
+
 .project__tags {
   .tag {
     font-size: 1rem;
@@ -120,7 +115,8 @@
   @extend %al-items-center;
   @extend %js-content-center;
   padding-top: 2rem;
-  > * {
+
+  >* {
     margin-left: 0.5rem;
   }
 }
@@ -135,12 +131,13 @@
   opacity: 0.5;
   border-radius: 50%;
   @extend %transition;
+
   &:hover {
     background: $black-color;
     opacity: 1;
+
     .portfolio-icon {
-      filter: invert(44%) sepia(57%) saturate(3026%) hue-rotate(200deg)
-        brightness(98%) contrast(97%);
+      filter: invert(44%) sepia(57%) saturate(3026%) hue-rotate(200deg) brightness(98%) contrast(97%);
     }
   }
 }

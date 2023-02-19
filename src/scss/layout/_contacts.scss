@@ -9,21 +9,24 @@
 }
 
 .contacts__container {
-  padding: 5rem 0;
+  padding: 2rem 0;
+
   @include media-small-desktop {
     flex-direction: column;
     gap: 3rem;
   }
 }
+
 .contacts-map {
-  @include media-tablet {
-  }
+  @include media-tablet {}
 }
+
 .contacts__form {
   display: block;
   padding: 2rem;
   border: 2px solid $border-color;
   border-radius: $border-radius;
+
   label {
     line-height: 3em;
   }
@@ -38,12 +41,15 @@
   border: 1px solid $border-color;
   border-radius: $border-radius;
   color: $light-color;
+
   &::placeholder {
     color: $text-color;
   }
+
   &:hover {
     border-color: $hover-color;
   }
+
   &:focus {
     border-color: $main-color;
     outline: none;
