@@ -10,7 +10,7 @@ const i18Obj = {
     download: "Download CV",
     "intro-title-hi": "Hello",
     "intro-title-name": "My name is",
-    "intro-title-fullname": "Alexsi Siniauski",
+    "intro-title-fullname": "Aleksi Siniauski",
     "intro-subtitle-info":
       "I'm a self-taught frontend web developer. I like to create interactive and accessible websites and web apps.",
     "about-title": "More About me",
@@ -59,9 +59,9 @@ const i18Obj = {
     download: "Pobierz CV",
     "intro-title-hi": "Witam",
     "intro-title-name": "Nazywam się",
-    "intro-title-fullname": "Alexsi Siniauski",
+    "intro-title-fullname": "Aleksi Siniauski",
     "intro-subtitle-info":
-      "Jestem samoukiem front-end web developerem. Lubię tworzyć interaktywne i przystępne strony oraz aplikacje internetowe.",
+    "Jestem Technical Account Managerem, który uwielbia zgłębiać web development i tworzyć interaktywne projekty".
     "about-title": "Więcej o mnie",
     "about-text":
       "Jestem godnym zaufania, zmotywowanym front-end programistą. Moim celem jest bycie profesjonalnym front-end web developerem, który tworzy rzeczy tworzenie  rzeczy, które uczynią życie lepszym dla wszystkich i wszędzie. Mam doświadczenie w pracy z HTML/CSS/JavaScript. Zobacz moje projekty. Każdy nowy projekt kompleksowo rozwija moje umiejętności. Bądź ze mną w kontakcie. Zawsze jestem gotowym znaleźć kreatywne i innowacyjne rozwiązania dla nowych wyzwań!!!",
