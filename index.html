@@ -1,629 +1,872 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="My Portfolio" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Alexsi Siniauski" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="src/scss/main.css" />
+    <link rel="icon" href="src/icons/coding.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="My Portfolio" />
-  <meta name="keywords" content="HTML, CSS, JavaScript" />
-  <meta name="author" content="Alexsi Siniauski" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="src/scss/main.css" />
-  <link rel="icon" href="src/icons/coding.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;500;700&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container header__container">
-      <a class="logo" href="#">Alexsi Siniauski</a>
-      <nav class="nav">
-        <ul class="list">
-          <li class="list__item">
-            <a href="#intro" class="list__link list__link--active" data-i18="home">Home</a>
-          </li>
-          <li class="list__item">
-            <a href="#about" class="list__link" data-i18="about">About</a>
-          </li>
-          <li class="list__item">
-            <a href="#skills" class="list__link" data-i18="skills">Skills</a>
-          </li>
-          <li class="list__item">
-            <a href="#projects" class="list__link" data-i18="projects">Projects</a>
-          </li>
-          <li class="list__item">
-            <a href="#contacts" class="list__link" data-i18="contacts">Contacts</a>
-          </li>
-        </ul>
-        <!-- close list -->
-      </nav>
-      <!-- close nav -->
-      <div class="languages">
-        <span class="language language--active lang-en">EN</span>
-        <span class="language lang-pl">PL</span>
-        <span class="language lang-by">BY</span>
-        <span class="language lang-ru">RU</span>
-      </div>
-      <!-- languages -->
-      <div class="header__button">
-        <a class="button" href="cv.pdf" data-i18="download" download>Download CV</a>
-      </div>
-      <!-- close header__button -->
-      <div class="hamburger">
-        <span class="line line-1"></span>
-        <span class="line line-2"></span>
-        <span class="line line-3"></span>
-      </div>
-      <!-- close hamburger -->
-    </div>
-    <!-- close container -->
-  </header>
-  <main>
-    <section id="intro" class="intro">
-      <div class="container intro__container">
-        <div class="intro__inner">
-          <h1 class="intro__title">
-            <span data-i18="intro-title-hi">Hello</span><br />
-            <span data-i18="intro-title-name">My name is</span>
-            <span class="title-name" data-i18="intro-title-fullname">Alexsi Siniauski</span>
-          </h1>
-          <p class="intro__subtitle">
-          <span class="intro__subtitle--main" data-i18="intro-subtitle-info">I’m a Technical Account Manager who loves exploring web development and creating interactive projects.</span>
-            
-            <span class="subtitle-span" data-i18="intro-welcome">Welcome to my portfolio website</span>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="#">Alexsi Siniauski</a>
+        <nav class="nav">
+          <ul class="list">
+            <li class="list__item">
+              <a
+                href="#intro"
+                class="list__link list__link--active"
+                data-i18="home"
+                >Home</a
+              >
+            </li>
+            <li class="list__item">
+              <a href="#about" class="list__link" data-i18="about">About</a>
+            </li>
+            <li class="list__item">
+              <a href="#skills" class="list__link" data-i18="skills">Skills</a>
+            </li>
+            <li class="list__item">
+              <a href="#projects" class="list__link" data-i18="projects"
+                >Projects</a
+              >
+            </li>
+            <li class="list__item">
+              <a href="#contacts" class="list__link" data-i18="contacts"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+          <!-- close list -->
+        </nav>
+        <!-- close nav -->
+        <div class="languages">
+          <span class="language language--active lang-en">EN</span>
+          <span class="language lang-pl">PL</span>
+          <span class="language lang-by">BY</span>
+          <span class="language lang-ru">RU</span>
         </div>
-        <!-- close intro__inner -->
+        <!-- languages -->
+        <div class="header__button">
+          <a class="button" href="cv.pdf" data-i18="download" download
+            >Download CV</a
+          >
+        </div>
+        <!-- close header__button -->
+        <div class="hamburger">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </div>
+        <!-- close hamburger -->
       </div>
       <!-- close container -->
-    </section>
-    <section id="about" class="section hero">
-      <div class="container about__container">
-        <div class="about__content">
-          <div class="about__profile">
-            <img class="about__img" src="src/images/cv-foto.jpg" width="300" height="300" alt="myPhoto" />
-            <div class="social header__social">
-              <ul class="social-list">
-                <li class="social__item">
-                  <a href="https://github.com/aliaksei-siniauski" target="_blank" class="social__link">
-                    <span class="social-icon icon-github"></span>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a href="https:discord.com/users/1016820199174967447" target="_blank" class="social__link">
-                    <span class="social-icon icon-discord"></span></a>
-                </li>
-                <li class="social__item">
-                  <a href="https://www.linkedin.com/in/siniauskialiaksei" target="_blank" class="social__link">
-                    <span class="social-icon icon-linkedin"></span>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a href="mailto:alexsi231@gmail.com" target="_blank" class="social__link">
-                    <span class="social-icon icon-gmail"></span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- clsoe about__profile -->
-          <div class="about__bio">
-            <h2 class="section-title about__title">More About me</h2>
-            <span class="section-line"></span>
-            <p class="about__text" data-i18="about-text">
-              I'm a trustworthy, self-motivated frontend web developer. My
-              goal is to be a professional fronted web developer who creates
-              things that make life better for everyone, everywhere. I have
-              experience working with HTML/CSS/JavaScript. Take a look at my
-              pet projects. Every new project develops my skills into a
-              well-rounded frontend web developer. Get in touch with me. I'm
-              always ready to find creative and innovative solutions for new
-              challenges!!!
+    </header>
+    <main>
+      <section id="intro" class="intro">
+        <div class="container intro__container">
+          <div class="intro__inner">
+            <h1 class="intro__title">
+              <span data-i18="intro-title-hi">Hello</span><br />
+              <span data-i18="intro-title-name">My name is</span>
+              <span class="title-name" data-i18="intro-title-fullname"
+                >Alexsi Siniauski</span
+              >
+            </h1>
+            <p class="intro__subtitle">
+              <span class="intro__subtitle--main" data-i18="intro-subtitle-info"
+                >I’m a Technical Account Manager who loves exploring web
+                development and creating interactive projects.</span
+              >
+              <span class="subtitle-span" data-i18="intro-welcome"
+                >Welcome to my portfolio website</span
+              >
             </p>
           </div>
-          <!-- close about-bio -->
+          <!-- close intro__inner -->
         </div>
-        <!-- about-content -->
-      </div>
-      <!-- container -->
-    </section>
-    <section id="skills" class="section skills">
-      <div class="container">
-        <h2 class="section-title" data-i18="skills-title">My Skills</h2>
-        <span class="section-line"></span>
-        <div class="skills-wrapper">
-          <div class="skill">
-            <span class="icon-square">
-              <span class="icon icon-html"></span>
-              <span class="icon-title">HTML</span>
-            </span>
+        <!-- close container -->
+      </section>
+      <section id="about" class="section hero">
+        <div class="container about__container">
+          <div class="about__content">
+            <div class="about__profile">
+              <img
+                class="about__img"
+                src="src/images/my-portfolio-img.png"
+                alt="myPhoto"
+              />
+              <div class="social header__social">
+                <ul class="social-list">
+                  <li class="social__item">
+                    <a
+                      href="https://github.com/aliaksei-siniauski"
+                      target="_blank"
+                      class="social__link"
+                    >
+                      <span class="social-icon icon-github"></span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https:discord.com/users/1016820199174967447"
+                      target="_blank"
+                      class="social__link"
+                    >
+                      <span class="social-icon icon-discord"></span
+                    ></a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.linkedin.com/in/siniauskialiaksei"
+                      target="_blank"
+                      class="social__link"
+                    >
+                      <span class="social-icon icon-linkedin"></span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="mailto:alexsi231@gmail.com"
+                      target="_blank"
+                      class="social__link"
+                    >
+                      <span class="social-icon icon-gmail"></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- clsoe about__profile -->
+            <div class="about__bio">
+              <h2 class="section-title about__title" data-i18="about-title">
+                More About me
+              </h2>
+              <span class="section-line"></span>
+              <p class="about__text" data-i18="about-text">
+                I love building websites and bringing designs to life through
+                code. Working with HTML, CSS, and JavaScript allows me to create
+                layouts that are not only functional but also visually engaging.
+                There’s something satisfying about taking a design concept and
+                turning it into a fully interactive, user-friendly experience.
+                Get in touch with me.
+                <br />At the same time, I’m passionate about learning new
+                technologies and exploring the possibilities they offer. Every
+                project is an opportunity not only to improve my skills in
+                coding and layout, but also to experiment with new tools,
+                frameworks, and approaches. I'm always ready to find creative
+                and innovative solutions for new challenges!!!
+              </p>
+            </div>
+            <!-- close about-bio -->
           </div>
-          <!-- close skill -->
-          <div class="skill">
-            <span class="icon-square">
-              <span class="icon icon-css"></span>
-              <span class="icon-title">CSS</span>
-            </span>
-          </div>
-          <!-- close skill -->
-          <div class="skill">
-            <span class="icon-square">
-              <span class="icon icon-js"></span>
-              <span class="icon-title">JavaScript</span>
-            </span>
-          </div>
-          <!-- close skill -->
-          <div class="skill">
-            <span class="icon-square">
-              <span class="icon icon-sass"></span>
-              <span class="icon-title">SASS</span>
-            </span>
-          </div>
-          <!-- close skill -->
-          <div class="skill">
-            <span class="icon-square">
-              <span class="icon icon-git"></span>
-              <span class="icon-title">Git</span>
-            </span>
-          </div>
-          <!-- close skill -->
-          <div class="skill">
-            <span class="icon-square">
-              <span class="icon icon-gulp"></span>
-              <span class="icon-title">Gulp</span>
-            </span>
-          </div>
-          <!-- close skill -->
-          <div class="skill">
-            <span class="icon-square">
-              <span class="icon icon-webpack"></span>
-              <span class="icon-title">Webpack</span>
-            </span>
-          </div>
-          <!-- close skill -->
-          <div class="skill">
-            <span class="icon-square">
-              <span class="icon icon-bootstrap"></span>
-              <span class="icon-title">Bootstrap</span>
-            </span>
-          </div>
-          <div class="skill">
-            <span class="icon-square">
-              <span class="icon icon-figma"></span>
-              <span class="icon-title">Figma</span>
-            </span>
-          </div>
-          <!-- close skill -->
-          <div class="skill">
-            <span class="icon-square">
-              <span class="icon icon-photoshop"></span>
-              <span class="icon-title">Photoshop</span>
-            </span>
-          </div>
-          <!-- close skill -->
-          <!-- close skill -->
-          <div class="skill">
-            <span class="icon-square">
-              <span class="icon icon-responsive"></span>
-              <span class="icon-title">Responsive Design</span>
-            </span>
-          </div>
-          <!-- close skill -->
-          <div class="skill">
-            <span class="icon-square">
-              <span class="icon icon-accessibility"></span>
-              <span class="icon-title">Accessibility</span>
-            </span>
-          </div>
-          <!-- close skill -->
+          <!-- about-content -->
         </div>
-        <!-- close skills-grid-wrapper -->
-      </div>
-      <!-- close container -->
-    </section>
-    <section id="projects" class="section projects">
-      <div class="container projects__container">
-        <h2 class="section-title" data-i18="projects-title">
-          Some of My projects
-        </h2>
-        <span class="section-line"></span>
-        <div class="projects__tags tags">
-          <span class="tag tag--active" data-i18="tag-all">All</span>
-          <span class="tag tag--bordered" data-i18="tag-current">Current project</span>
-          <span class="tag tag--bordered" data-i18="tag-website">WebSite</span>
-          <span class="tag tag--bordered" data-i18="tag-app">Web Application</span>
+        <!-- container -->
+      </section>
+      <section id="skills" class="section skills">
+        <div class="container">
+          <h2 class="section-title" data-i18="skills-title">My Skills</h2>
+          <span class="section-line"></span>
+          <div class="skills-wrapper">
+            <div class="skill">
+              <span class="icon-square">
+                <span class="icon icon-html"></span>
+                <span class="icon-title">HTML</span>
+              </span>
+            </div>
+            <!-- close skill -->
+            <div class="skill">
+              <span class="icon-square">
+                <span class="icon icon-css"></span>
+                <span class="icon-title">CSS</span>
+              </span>
+            </div>
+            <!-- close skill -->
+            <div class="skill">
+              <span class="icon-square">
+                <span class="icon icon-js"></span>
+                <span class="icon-title">JavaScript</span>
+              </span>
+            </div>
+            <!-- close skill -->
+            <div class="skill">
+              <span class="icon-square">
+                <span class="icon icon-sass"></span>
+                <span class="icon-title">SASS</span>
+              </span>
+            </div>
+            <!-- close skill -->
+            <div class="skill">
+              <span class="icon-square">
+                <span class="icon icon-git"></span>
+                <span class="icon-title">Git</span>
+              </span>
+            </div>
+            <!-- close skill -->
+            <div class="skill">
+              <span class="icon-square">
+                <span class="icon icon-gulp"></span>
+                <span class="icon-title">Gulp</span>
+              </span>
+            </div>
+            <!-- close skill -->
+            <div class="skill">
+              <span class="icon-square">
+                <span class="icon icon-webpack"></span>
+                <span class="icon-title">Webpack</span>
+              </span>
+            </div>
+            <!-- close skill -->
+            <div class="skill">
+              <span class="icon-square">
+                <span class="icon icon-bootstrap"></span>
+                <span class="icon-title">Bootstrap</span>
+              </span>
+            </div>
+            <div class="skill">
+              <span class="icon-square">
+                <span class="icon icon-figma"></span>
+                <span class="icon-title">Figma</span>
+              </span>
+            </div>
+            <!-- close skill -->
+            <div class="skill">
+              <span class="icon-square">
+                <span class="icon icon-strapi"></span>
+                <span class="icon-title">Strapi</span>
+              </span>
+            </div>
+            <!-- close skill -->
+            <!-- close skill -->
+            <div class="skill">
+              <span class="icon-square">
+                <span class="icon icon-responsive"></span>
+                <span class="icon-title">Responsive Design</span>
+              </span>
+            </div>
+            <!-- close skill -->
+            <div class="skill">
+              <span class="icon-square">
+                <span class="icon icon-accessibility"></span>
+                <span class="icon-title">Accessibility</span>
+              </span>
+            </div>
+            <!-- close skill -->
+          </div>
+          <!-- close skills-grid-wrapper -->
         </div>
-        <!-- close tags -->
-        <div class="projects-content">
-          <div class="project project-card">
-            <img class="project-img" src="src/images/portfolio-1.jpg" loading="lazy" alt="portfolio-1" />
-            <div class="project__content">
-              <h4 class="project-title" data-i18="project-1">
-                Travel Project
-              </h4>
-              <p class="project-details" data-i18="project-1-details">
-                Travel planning adaptive and interactive website
-              </p>
-              <div class="project__tags tags">
-                <span class="tag tag--bordered" data-i18="tag-website">WebSite</span>
-              </div>
-            </div>
-            <div class="overlay portfolio-overlay">
-              <h3 class="portfolio-title" data-i18="tag-source">
-                Project Source
-              </h3>
-              <div class="portfolio-icons">
-                <a class="portfolio-link" href="https://github.com/aliaksei-siniauski/travel-project" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-github"></span>
-                </a>
-                <a class="portfolio-link" href="https://aliaksei-siniauski.github.io/travel-project/" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-site"></span>
-                </a>
-              </div>
-              <!-- portfolio-icons -->
-            </div>
-            <!-- close overlay -->
+        <!-- close container -->
+      </section>
+      <section id="projects" class="section projects">
+        <div class="container projects__container">
+          <h2 class="section-title" data-i18="projects-title">
+            Some of My projects
+          </h2>
+          <span class="section-line"></span>
+          <div class="projects__tags tags">
+            <span class="tag tag--active" data-i18="tag-all">All</span>
+            <span class="tag tag--bordered" data-i18="tag-current"
+              >Current project</span
+            >
+            <span class="tag tag--bordered" data-i18="tag-website"
+              >WebSite</span
+            >
+            <span class="tag tag--bordered" data-i18="tag-app"
+              >Web Application</span
+            >
           </div>
-          <!-- close project travel -->
-          <div class="project project-card">
-            <img class="project-img" src="src/images/portfolio-2.jpg" loading="lazy" alt="portfolio-2" />
-            <div class="project__content">
-              <h4 class="project-title" data-i18="project-2">
-                Personal Website Project
-              </h4>
-              <p class="project-details" data-i18="project-2-details">
-                Personal responsive and interactive website
-              </p>
-              <div class="project__tags tags">
-                <span class="tag tag--bordered" data-i18="tag-website">WebSite</span>
+          <!-- close tags -->
+          <div class="projects-content">
+            <div class="project project-card">
+              <img
+                class="project-img"
+                src="src/images/portfolio-1.jpg"
+                loading="lazy"
+                alt="portfolio-1"
+              />
+              <div class="project__content">
+                <h4 class="project-title" data-i18="project-1">
+                  Travel Project
+                </h4>
+                <p class="project-details" data-i18="project-1-details">
+                  Travel planning adaptive and interactive website
+                </p>
+                <div class="project__tags tags">
+                  <span class="tag tag--bordered" data-i18="tag-website"
+                    >WebSite</span
+                  >
+                </div>
               </div>
-            </div>
-            <div class="overlay portfolio-overlay">
-              <h3 class="portfolio-title" data-i18="tag-source">
-                Project Source
-              </h3>
-              <div class="portfolio-icons">
-                <a class="portfolio-link" href="https://github.com/aliaksei-siniauski/myPortfolioProject"
-                  target="_blank" rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-github"></span>
-                </a>
-                <a class="portfolio-link" href="https://aliaksei-siniauski.github.io/myPortfolioProject/"
-                  target="_blank" rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-site"></span>
-                </a>
+              <div class="overlay portfolio-overlay">
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
+                <div class="portfolio-icons">
+                  <a
+                    class="portfolio-link"
+                    href="https://github.com/aliaksei-siniauski/travel-project"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-github"></span>
+                  </a>
+                  <a
+                    class="portfolio-link"
+                    href="https://aliaksei-siniauski.github.io/travel-project/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-site"></span>
+                  </a>
+                </div>
+                <!-- portfolio-icons -->
               </div>
-              <!-- portfolio-icons -->
+              <!-- close overlay -->
             </div>
-            <!-- close overlay -->
-          </div>
-          <!-- close project personal portfolio-->
-          <div class="project project-card momentum">
-            <img class="project-img" src="src/images/portfolio-3.jpg" loading="lazy" alt="portfolio-3" />
-            <div class="project__content">
-              <h4 class="project-title" data-i18="project-3">
-                Momentum Project
-              </h4>
-              <p class="project-details" data-i18="project-3-details">
-                A simple copy of the Chrome Web Store app of the same name
-              </p>
-              <div class="project__tags tags">
-                <span class="tag tag--bordered" data-i18="tag-app">Web Application</span>
-                <span class="tag tag--bordered" data-i18="tag-current">Current project</span>
+            <!-- close project travel -->
+            <div class="project project-card">
+              <img
+                class="project-img"
+                src="src/images/portfolio-2.jpg"
+                loading="lazy"
+                alt="portfolio-2"
+              />
+              <div class="project__content">
+                <h4 class="project-title" data-i18="project-2">
+                  Personal Website Project
+                </h4>
+                <p class="project-details" data-i18="project-2-details">
+                  Personal responsive and interactive website
+                </p>
+                <div class="project__tags tags">
+                  <span class="tag tag--bordered" data-i18="tag-website"
+                    >WebSite</span
+                  >
+                </div>
               </div>
-            </div>
-            <div class="overlay portfolio-overlay">
-              <h3 class="portfolio-title" data-i18="tag-source">
-                Project Source
-              </h3>
-              <div class="portfolio-icons">
-                <a class="portfolio-link" href="https://github.com/aliaksei-siniauski/momentum-app" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-github"></span>
-                </a>
-                <a class="portfolio-link" href="https://rs-momentum-app.netlify.app/" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-site"></span>
-                </a>
+              <div class="overlay portfolio-overlay">
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
+                <div class="portfolio-icons">
+                  <a
+                    class="portfolio-link"
+                    href="https://github.com/aliaksei-siniauski/myPortfolioProject"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-github"></span>
+                  </a>
+                  <a
+                    class="portfolio-link"
+                    href="https://aliaksei-siniauski.github.io/myPortfolioProject/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-site"></span>
+                  </a>
+                </div>
+                <!-- portfolio-icons -->
               </div>
-              <!-- portfolio-icons -->
+              <!-- close overlay -->
             </div>
-            <!-- close overlay -->
-          </div>
-          <!-- close project -->
-          <div class="project project-card">
-            <img class="project-img" src="src/images/portfolio-4.jpg" loading="lazy" alt="portfolio-4" />
-            <div class="project__content">
-              <h4 class="project-title" data-i18="project-4">
-                Photography Portfolio Project
-              </h4>
-              <p class="project-details" data-i18="project-4-details">
-                Photographer portfolio responsive and interactive landing page
-              </p>
-              <div class="project__tags tags">
-                <span class="tag tag--bordered" data-i18="tag-website">WebSite</span>
+            <!-- close project personal portfolio-->
+            <div class="project project-card momentum">
+              <img
+                class="project-img"
+                src="src/images/portfolio-3.jpg"
+                loading="lazy"
+                alt="portfolio-3"
+              />
+              <div class="project__content">
+                <h4 class="project-title" data-i18="project-3">
+                  Momentum Project
+                </h4>
+                <p class="project-details" data-i18="project-3-details">
+                  A simple copy of the Chrome Web Store app of the same name
+                </p>
+                <div class="project__tags tags">
+                  <span class="tag tag--bordered" data-i18="tag-app"
+                    >Web Application</span
+                  >
+                  <span class="tag tag--bordered" data-i18="tag-current"
+                    >Current project</span
+                  >
+                </div>
               </div>
-            </div>
-            <div class="overlay portfolio-overlay">
-              <h3 class="portfolio-title" data-i18="tag-source">
-                Project Source
-              </h3>
-              <div class="portfolio-icons">
-                <a class="portfolio-link" href="https://github.com/aliaksei-siniauski/photography-portfolio"
-                  target="_blank" rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-github"></span>
-                </a>
-                <a class="portfolio-link" href="https://aliaksei-siniauski.github.io/photography-portfolio/"
-                  target="_blank" rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-site"></span>
-                </a>
+              <div class="overlay portfolio-overlay">
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
+                <div class="portfolio-icons">
+                  <a
+                    class="portfolio-link"
+                    href="https://github.com/aliaksei-siniauski/momentum-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-github"></span>
+                  </a>
+                  <a
+                    class="portfolio-link"
+                    href="https://rs-momentum-app.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-site"></span>
+                  </a>
+                </div>
+                <!-- portfolio-icons -->
               </div>
-              <!-- portfolio-icons -->
+              <!-- close overlay -->
             </div>
-            <!-- close overlay -->
-          </div>
-          <!-- close project photography portfolio -->
-          <div class="project project-card">
-            <img class="project-img" src="src/images/portfolio-5.jpg" loading="lazy" alt="portfolio-5" />
-            <div class="project__content">
-              <h4 class="project-title" data-i18="project-5">
-                Animal Shelter Project
-              </h4>
-              <p class="project-details" data-i18="project-5-details">
-                Animal Shelter responsive and interactive website
-              </p>
-              <div class="project__tags tags">
-                <span class="tag tag--bordered" data-i18="tag-website">WebSite</span>
-                <span class="tag tag--bordered" data-i18="tag-current">Current project</span>
+            <!-- close project -->
+            <div class="project project-card">
+              <img
+                class="project-img"
+                src="src/images/portfolio-4.jpg"
+                loading="lazy"
+                alt="portfolio-4"
+              />
+              <div class="project__content">
+                <h4 class="project-title" data-i18="project-4">
+                  Photography Portfolio Project
+                </h4>
+                <p class="project-details" data-i18="project-4-details">
+                  Photographer portfolio responsive and interactive landing page
+                </p>
+                <div class="project__tags tags">
+                  <span class="tag tag--bordered" data-i18="tag-website"
+                    >WebSite</span
+                  >
+                </div>
               </div>
-            </div>
-            <div class="overlay portfolio-overlay">
-              <h3 class="portfolio-title" data-i18="tag-source">
-                Project Source
-              </h3>
-              <div class="portfolio-icons">
-                <a class="portfolio-link" href="https://github.com/aliaksei-siniauski/shelter-project" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-github"></span>
-                </a>
-                <a class="portfolio-link" href="https://aliaksei-siniauski.github.io/shelter-project/" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-site"></span>
-                </a>
+              <div class="overlay portfolio-overlay">
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
+                <div class="portfolio-icons">
+                  <a
+                    class="portfolio-link"
+                    href="https://github.com/aliaksei-siniauski/photography-portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-github"></span>
+                  </a>
+                  <a
+                    class="portfolio-link"
+                    href="https://aliaksei-siniauski.github.io/photography-portfolio/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-site"></span>
+                  </a>
+                </div>
+                <!-- portfolio-icons -->
               </div>
-              <!-- portfolio-icons -->
+              <!-- close overlay -->
             </div>
-            <!-- close overlay -->
-          </div>
-          <!-- close project shelter -->
-          <div class="project project-card">
-            <img class="project-img" src="src/images/portfolio-6.jpg" loading="lazy" alt="portfolio-6" />
-            <div class="project__content">
-              <h4 class="project-title" data-i18="project-6">
-                Online-zoo Project
-              </h4>
-              <p class="project-details" data-i18="project-6-details">
-                Online-zoo responsive and interactive website
-              </p>
-              <div class="project__tags tags">
-                <span class="tag tag--bordered" data-i18="tag-website">WebSite</span>
+            <!-- close project photography portfolio -->
+            <div class="project project-card">
+              <img
+                class="project-img"
+                src="src/images/portfolio-5.jpg"
+                loading="lazy"
+                alt="portfolio-5"
+              />
+              <div class="project__content">
+                <h4 class="project-title" data-i18="project-5">
+                  Animal Shelter Project
+                </h4>
+                <p class="project-details" data-i18="project-5-details">
+                  Animal Shelter responsive and interactive website
+                </p>
+                <div class="project__tags tags">
+                  <span class="tag tag--bordered" data-i18="tag-website"
+                    >WebSite</span
+                  >
+                  <span class="tag tag--bordered" data-i18="tag-current"
+                    >Current project</span
+                  >
+                </div>
               </div>
-            </div>
-            <div class="overlay portfolio-overlay">
-              <h3 class="portfolio-title" data-i18="tag-source">
-                Project Source
-              </h3>
-              <div class="portfolio-icons">
-                <a class="portfolio-link" href="https://github.com/aliaksei-siniauski/online-zoo" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-github"></span>
-                </a>
-                <a class="portfolio-link" href="https://aliaksei-siniauski.github.io/online-zoo/" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-site"></span>
-                </a>
+              <div class="overlay portfolio-overlay">
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
+                <div class="portfolio-icons">
+                  <a
+                    class="portfolio-link"
+                    href="https://github.com/aliaksei-siniauski/shelter-project"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-github"></span>
+                  </a>
+                  <a
+                    class="portfolio-link"
+                    href="https://aliaksei-siniauski.github.io/shelter-project/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-site"></span>
+                  </a>
+                </div>
+                <!-- portfolio-icons -->
               </div>
-              <!-- portfolio-icons -->
+              <!-- close overlay -->
             </div>
-            <!-- close overlay -->
-          </div>
-          <!-- close project online-zoo -->
-          <div class="project project-card">
-            <img class="project-img" src="src/images/portfolio-7.jpg" loading="lazy" alt="portfolio-6" />
-            <div class="project__content">
-              <h4 class="project-title" data-i18="project-7">
-                Plants Project
-              </h4>
-              <p class="project-details" data-i18="project-7-details">
-                Plants responsive and interactive website
-              </p>
-              <div class="project__tags tags">
-                <span class="tag tag--bordered" data-i18="tag-website">WebSite</span>
-                <span class="tag tag--bordered" data-i18="tag-current">Current project</span>
+            <!-- close project shelter -->
+            <div class="project project-card">
+              <img
+                class="project-img"
+                src="src/images/portfolio-6.jpg"
+                loading="lazy"
+                alt="portfolio-6"
+              />
+              <div class="project__content">
+                <h4 class="project-title" data-i18="project-6">
+                  Online-zoo Project
+                </h4>
+                <p class="project-details" data-i18="project-6-details">
+                  Online-zoo responsive and interactive website
+                </p>
+                <div class="project__tags tags">
+                  <span class="tag tag--bordered" data-i18="tag-website"
+                    >WebSite</span
+                  >
+                </div>
               </div>
-            </div>
-            <div class="overlay portfolio-overlay">
-              <h3 class="portfolio-title" data-i18="tag-source">
-                Project Source
-              </h3>
-              <div class="portfolio-icons">
-                <a class="portfolio-link" href="https://github.com/aliaksei-siniauski/plant-project" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-github"></span>
-                </a>
-                <a class="portfolio-link" href="https://aliaksei-siniauski.github.io/plant-project/" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-site"></span>
-                </a>
+              <div class="overlay portfolio-overlay">
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
+                <div class="portfolio-icons">
+                  <a
+                    class="portfolio-link"
+                    href="https://github.com/aliaksei-siniauski/online-zoo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-github"></span>
+                  </a>
+                  <a
+                    class="portfolio-link"
+                    href="https://aliaksei-siniauski.github.io/online-zoo/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-site"></span>
+                  </a>
+                </div>
+                <!-- portfolio-icons -->
               </div>
-              <!-- portfolio-icons -->
+              <!-- close overlay -->
             </div>
-            <!-- close overlay -->
-          </div>
-          <!-- close project-card -->
-          <div class="project project-card color-flipper">
-            <img class="project-img" src="src/images/portfolio-8.jpg" loading="lazy" alt="portfolio-8" />
-            <div class="project__content">
-              <h4 class="project-title" data-i18="project-8">
-                Color-flipper Project
-              </h4>
-              <p class="project-details" data-i18="project-8-details">
-                A mini javascript project in which you will change the
-                background to a random color
-              </p>
-              <div class="project__tags tags">
-                <span class="tag tag--bordered" data-i18="tag-app">Web Application</span>
+            <!-- close project online-zoo -->
+            <div class="project project-card">
+              <img
+                class="project-img"
+                src="src/images/portfolio-7.jpg"
+                loading="lazy"
+                alt="portfolio-6"
+              />
+              <div class="project__content">
+                <h4 class="project-title" data-i18="project-7">
+                  Plants Project
+                </h4>
+                <p class="project-details" data-i18="project-7-details">
+                  Plants responsive and interactive website
+                </p>
+                <div class="project__tags tags">
+                  <span class="tag tag--bordered" data-i18="tag-website"
+                    >WebSite</span
+                  >
+                  <span class="tag tag--bordered" data-i18="tag-current"
+                    >Current project</span
+                  >
+                </div>
               </div>
-            </div>
-            <div class="overlay portfolio-overlay">
-              <h3 class="portfolio-title" data-i18="tag-source">
-                Project Source
-              </h3>
-              <div class="portfolio-icons">
-                <a class="portfolio-link" href="https://github.com/aliaksei-siniauski/color-flipper" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-github"></span>
-                </a>
-                <a class="portfolio-link" href="https://aliaksei-siniauski.github.io/color-flipper/" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-site"></span>
-                </a>
+              <div class="overlay portfolio-overlay">
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
+                <div class="portfolio-icons">
+                  <a
+                    class="portfolio-link"
+                    href="https://github.com/aliaksei-siniauski/plant-project"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-github"></span>
+                  </a>
+                  <a
+                    class="portfolio-link"
+                    href="https://aliaksei-siniauski.github.io/plant-project/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-site"></span>
+                  </a>
+                </div>
+                <!-- portfolio-icons -->
               </div>
-              <!-- portfolio-icons -->
+              <!-- close overlay -->
             </div>
-            <!-- close overlay -->
-          </div>
-          <div class="project project-card">
-            <img class="project-img" src="src/images/portfolio-9.jpg" loading="lazy" alt="portfolio-8" />
-            <div class="project__content">
-              <h4 class="project-title" data-i18="project-9">
-                Movie-Search Project
-              </h4>
-              <p class="project-details" data-i18="project-9-details">
-                A simple movie app with Vanilla JavaScript
-              </p>
-              <div class="project__tags tags">
-                <span class="tag tag--bordered" data-i18="tag-app">Web Application</span>
+            <!-- close project-card -->
+            <div class="project project-card color-flipper">
+              <img
+                class="project-img"
+                src="src/images/portfolio-8.jpg"
+                loading="lazy"
+                alt="portfolio-8"
+              />
+              <div class="project__content">
+                <h4 class="project-title" data-i18="project-8">
+                  Color-flipper Project
+                </h4>
+                <p class="project-details" data-i18="project-8-details">
+                  A mini javascript project in which you will change the
+                  background to a random color
+                </p>
+                <div class="project__tags tags">
+                  <span class="tag tag--bordered" data-i18="tag-app"
+                    >Web Application</span
+                  >
+                </div>
               </div>
-            </div>
-            <div class="overlay portfolio-overlay">
-              <h3 class="portfolio-title" data-i18="tag-source">
-                Project Source
-              </h3>
-              <div class="portfolio-icons">
-                <a class="portfolio-link" href="https://github.com/aliaksei-siniauski/movies-app" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-github"></span>
-                </a>
-                <a class="portfolio-link" href="https://aliaksei-siniauski.github.io/movies-app/" target="_blank"
-                  rel="noopener noreferrer">
-                  <span class="icon portfolio-icon icon-site"></span>
-                </a>
+              <div class="overlay portfolio-overlay">
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
+                <div class="portfolio-icons">
+                  <a
+                    class="portfolio-link"
+                    href="https://github.com/aliaksei-siniauski/color-flipper"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-github"></span>
+                  </a>
+                  <a
+                    class="portfolio-link"
+                    href="https://aliaksei-siniauski.github.io/color-flipper/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-site"></span>
+                  </a>
+                </div>
+                <!-- portfolio-icons -->
               </div>
-              <!-- portfolio-icons -->
+              <!-- close overlay -->
             </div>
-            <!-- close overlay -->
+            <div class="project project-card">
+              <img
+                class="project-img"
+                src="src/images/portfolio-9.jpg"
+                loading="lazy"
+                alt="portfolio-8"
+              />
+              <div class="project__content">
+                <h4 class="project-title" data-i18="project-9">
+                  Movie-Search Project
+                </h4>
+                <p class="project-details" data-i18="project-9-details">
+                  A simple movie app with Vanilla JavaScript
+                </p>
+                <div class="project__tags tags">
+                  <span class="tag tag--bordered" data-i18="tag-app"
+                    >Web Application</span
+                  >
+                </div>
+              </div>
+              <div class="overlay portfolio-overlay">
+                <h3 class="portfolio-title" data-i18="tag-source">
+                  Project Source
+                </h3>
+                <div class="portfolio-icons">
+                  <a
+                    class="portfolio-link"
+                    href="https://github.com/aliaksei-siniauski/movies-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-github"></span>
+                  </a>
+                  <a
+                    class="portfolio-link"
+                    href="https://aliaksei-siniauski.github.io/movies-app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="icon portfolio-icon icon-site"></span>
+                  </a>
+                </div>
+                <!-- portfolio-icons -->
+              </div>
+              <!-- close overlay -->
+            </div>
           </div>
         </div>
-      </div>
-      <!-- close container -->
-    </section>
-    <section id="contacts" class="section contacts">
-      <div class="container">
-        <h2 class="section-title" data-i18="contacts-title">
-          Get in touch with me
-        </h2>
-        <span class="section-line"></span>
-        <div class="layout-2-columns contacts__container">
-          <div class="contacts-map">
-            <div style="
+        <!-- close container -->
+      </section>
+      <section id="contacts" class="section contacts">
+        <div class="container">
+          <h2 class="section-title" data-i18="contacts-title">
+            Get in touch with me
+          </h2>
+          <span class="section-line"></span>
+          <div class="layout-2-columns contacts__container">
+            <div class="contacts-map">
+              <div
+                style="
                   max-width: 100%;
                   list-style: none;
                   transition: none;
                   overflow: hidden;
                   width: 100%;
                   height: 600px;
-                ">
-              <div id="canvas-for-googlemap" style="height: 100%; width: 100%; max-width: 100%">
-                <iframe style="height: 100%; width: 100%; border: 0" frameborder="0"
-                  src="https://www.google.com/maps/embed/v1/place?q=Warszawa,+Poland+&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                "
+              >
+                <div
+                  id="canvas-for-googlemap"
+                  style="height: 100%; width: 100%; max-width: 100%"
+                >
+                  <iframe
+                    style="height: 100%; width: 100%; border: 0"
+                    frameborder="0"
+                    src="https://www.google.com/maps/embed/v1/place?q=Warszawa,+Poland+&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                  ></iframe>
+                </div>
+                <style>
+                  #canvas-for-googlemap img {
+                    max-width: none !important;
+                    background: none !important;
+                    font-size: inherit;
+                    font-weight: inherit;
+                  }
+                </style>
               </div>
-              <style>
-                #canvas-for-googlemap img {
-                  max-width: none !important;
-                  background: none !important;
-                  font-size: inherit;
-                  font-weight: inherit;
-                }
-              </style>
             </div>
-          </div>
-          <div class="contacts__form">
-            <form action="https://formspree.io/f/xgeqoqje" method="POST">
-              <label for="name">Name</label>
-              <input id="name" class="input-field" type="text" name="name" equired maxlength="20"
-                placeholder="Your name" required />
-              <span role="alert" id="nameError" aria-hidden="true">
-                Please enter First Name!</span>
-              <label for="email">Email</label>
-              <input id="email" class="input-field" type="email" name="name" placeholder="Your email" required />
-              <label for="message">Message</label>
-              <textarea id="message" class="input-field" name="message" placeholder="Enter your message"></textarea>
-            </form>
-            <!-- close form -->
-            <div class="contacts__button">
-              <button type="submit" class="button" data-i18="send-message">
-                Send Message
-              </button>
+            <div class="contacts__form">
+              <form action="https://formspree.io/f/xgeqoqje" method="POST">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  class="input-field"
+                  type="text"
+                  name="name"
+                  equired
+                  maxlength="20"
+                  placeholder="Your name"
+                  required
+                />
+                <span role="alert" id="nameError" aria-hidden="true">
+                  Please enter First Name!</span
+                >
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  class="input-field"
+                  type="email"
+                  name="name"
+                  placeholder="Your email"
+                  required
+                />
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  class="input-field"
+                  name="message"
+                  placeholder="Enter your message"
+                ></textarea>
+              </form>
+              <!-- close form -->
+              <div class="contacts__button">
+                <button type="submit" class="button" data-i18="send-message">
+                  Send Message
+                </button>
+              </div>
             </div>
+            <!-- close cotact-form -->
           </div>
-          <!-- close cotact-form -->
+          <!-- clsoe layout-2-columns -->
         </div>
-        <!-- clsoe layout-2-columns -->
+        <!-- close container -->
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="social footer__social">
+          <ul class="social-list">
+            <li class="social__item">
+              <a
+                href="https://github.com/aliaksei-siniauski"
+                target="_blank"
+                class="social__link"
+              >
+                <span class="social-icon icon-github"></span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://discordapp.com/users/1016820199174967447"
+                target="_blank"
+                class="social__link"
+              >
+                <span class="social-icon icon-discord"></span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.linkedin.com/in/siniauskialiaksei"
+                target="_blank"
+                class="social__link"
+              >
+                <span class="social-icon icon-linkedin"></span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="mailto:siniauskialiaksei@gmail.com"
+                target="_blank"
+                class="social__link"
+              >
+                <span class="social-icon icon-gmail"></span>
+              </a>
+            </li>
+          </ul>
+          <span class="icon icon-arrow"></span>
+        </div>
+        <!-- close footer__social -->
+        <div class="footer__copyright">
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with <span class="copy-symball"> &#x2661;</span> by
+            <a class="auther" href="mailto:alexsi231@gmail.com" target="_blank"
+              >Alexsi Siniauski</a
+            >
+          </p>
+        </div>
       </div>
-      <!-- close container -->
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="social footer__social">
-        <ul class="social-list">
-          <li class="social__item">
-            <a href="https://github.com/aliaksei-siniauski" target="_blank" class="social__link">
-              <span class="social-icon icon-github"></span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="https://discordapp.com/users/1016820199174967447" target="_blank" class="social__link">
-              <span class="social-icon icon-discord"></span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="https://www.linkedin.com/in/siniauskialiaksei" target="_blank" class="social__link">
-              <span class="social-icon icon-linkedin"></span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="mailto:siniauskialiaksei@gmail.com" target="_blank" class="social__link">
-              <span class="social-icon icon-gmail"></span>
-            </a>
-          </li>
-        </ul>
-        <span class="icon icon-arrow"></span>
-      </div>
-      <!-- close footer__social -->
-      <div class="footer__copyright">
-        <p class="copy">&copy; Copyright 2022</p>
-        <p class="copy">
-          Built with <span class="copy-symball"> &#x2661;</span> by
-          <a class="auther" href="mailto:alexsi231@gmail.com" target="_blank">Alexsi Siniauski</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-  <script type="module" src="src/index.js"></script>
-</body>
-
+    </footer>
+    <script type="module" src="src/index.js"></script>
+  </body>
 </html>

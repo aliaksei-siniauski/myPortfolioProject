@@ -1,4 +1,5 @@
-/* Abstracts */ /* Colors */
+/* Abstracts */
+/* Colors */
 /* Size */
 /* font */
 /* Fonts */
@@ -149,8 +150,8 @@ article {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -357,6 +358,11 @@ article {
 }
 
 .about__img {
+  width: 300px;
+  height: 360px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0077b6;
   object-fit: cover;
   border-radius: 10%;
   -webkit-animation: filter-animation 5s infinite;
@@ -368,8 +374,8 @@ article {
 }
 
 .skills-wrapper {
-  width: 75%;
-  gap: 2rem;
+  width: 100%;
+  gap: 3rem;
   margin: 0 auto;
   padding: 2rem 0;
 }
@@ -447,10 +453,10 @@ article {
 
 .project-card {
   position: relative;
-  background: hsl(200deg, 55%, 10%);
-  border: 2px solid hwb(210 37% 59%);
+  background: hsl(200, 55%, 10%);
+  border: 2px solid hsl(210, 5.1282051282%, 39%);
   border-radius: 0.5rem;
-  filter: drop-shadow(0px 4px 4px hsl(189deg, 79%, 24%));
+  filter: drop-shadow(0px 4px 4px hsl(189, 79%, 24%));
 }
 .project-card:hover {
   border-color: #fb6571;
@@ -613,7 +619,9 @@ article {
 }
 .layout-2-columns > * {
   flex-basis: calc(50% - 2rem);
-} /* Components */
+}
+
+/* Components */
 .button {
   position: relative;
   z-index: 1;
@@ -888,7 +896,7 @@ article {
   }
 }
 
-.icon-accessibility, .icon-responsive, .icon-git, .icon-webpack, .icon-gulp, .icon-figma, .icon-photoshop, .icon-bootstrap, .icon-sass, .icon-js, .icon-css, .icon-html {
+.icon-accessibility, .icon-responsive, .icon-git, .icon-webpack, .icon-gulp, .icon-figma, .icon-strapi, .icon-bootstrap, .icon-sass, .icon-js, .icon-css, .icon-html {
   width: 95px;
   height: 150px;
   background-position: center;
@@ -958,8 +966,8 @@ article {
   background-image: url("../icons/skills/bootstrap.svg");
 }
 
-.icon-photoshop {
-  background-image: url("../icons/skills/photoshop.svg");
+.icon-strapi {
+  background-image: url("../icons/skills/strapi.svg");
 }
 
 .icon-figma {

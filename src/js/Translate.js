@@ -15,8 +15,7 @@ const i18Obj = {
       "I’m a Technical Account Manager who loves exploring web development and creating interactive projects.",
     "about-title": "More About me",
     "about-text":
-      "I'm a trustworthy, self-motivated frontend web developer. My goal is to be a professional frontend web developer who creates things that make life better for everyone, everywhere. I have experience working with HTML/CSS/JavaScript. Take a look at my pet projects. Every new project develops my skills into a well-rounded frontend web developer. Get in touch with me. I'm always ready to find creative and innovative solutions for new challenges!!!",
-    "about-me-importnat": "front-end web developer.",
+      "I love building websites and bringing designs to life through code. Working with HTML, CSS, and JavaScript allows me to create layouts that are not only functional but also visually engaging. There’s something satisfying about taking a design concept and turning it into a fully interactive, user-friendly experience. At the same time, I’m passionate about learning new technologies and exploring the possibilities they offer. Every project is an opportunity not only to improve my skills in coding and layout, but also to experiment with new tools, frameworks, and approaches. I'm always ready to find creative and innovative solutions for new challenges!!!",
     "intro-welcome": "Welcome to my portfolio website",
     "skills-title": "My Skills",
     "projects-title": "Some of My projects",
@@ -61,10 +60,10 @@ const i18Obj = {
     "intro-title-name": "Nazywam się",
     "intro-title-fullname": "Aleksi Siniauski",
     "intro-subtitle-info":
-    "Jestem Technical Account Managerem, który uwielbia zgłębiać web development i tworzyć interaktywne projekty".
+    "Jestem Technical Account Managerem, który uwielbia zgłębiać web development i tworzyć interaktywne projekty",
     "about-title": "Więcej o mnie",
     "about-text":
-      "Jestem godnym zaufania, zmotywowanym front-end programistą. Moim celem jest bycie profesjonalnym front-end web developerem, który tworzy rzeczy tworzenie  rzeczy, które uczynią życie lepszym dla wszystkich i wszędzie. Mam doświadczenie w pracy z HTML/CSS/JavaScript. Zobacz moje projekty. Każdy nowy projekt kompleksowo rozwija moje umiejętności. Bądź ze mną w kontakcie. Zawsze jestem gotowym znaleźć kreatywne i innowacyjne rozwiązania dla nowych wyzwań!!!",
+    "Uwielbiam tworzyć strony internetowe i ożywiać projekty dzięki kodowi. Praca z HTML, CSS i JavaScript pozwala mi tworzyć układy, które są nie tylko funkcjonalne, ale też atrakcyjne wizualnie. Jest coś satysfakcjonującego w tym, aby wziąć koncepcję projektu i przekształcić ją w w pełni interaktywne, przyjazne dla użytkownika doświadczenie. Jednocześnie pasjonuje mnie nauka nowych technologii i odkrywanie możliwości, jakie oferują. Każdy projekt to okazja nie tylko do doskonalenia umiejętności w kodowaniu i tworzeniu układów, ale także do eksperymentowania z nowymi narzędziami, frameworkami i podejściami. Zawsze jestem gotów znaleźć kreatywne i innowacyjne rozwiązania dla nowych wyzwań!",
     "intro-welcome": "Witam na mojej stronie internetowej",
     "skills-title": "Moje umiejętności",
     "projects-title": "Niektóre z moich projektów",
@@ -117,7 +116,7 @@ const i18Obj = {
     "intro-welcome": "Рады вас бачыць на сваём сайце",
     "about-title": "Больш пра мяне",
     "about-text":
-      "Я адказны, мэтанакіраваны front-end вэб-распрацоўшчык. Мая мэта – стаць прафесійным вэб-распрацоўшчыкам, які стварае рэчы, што робяць жыццё лепшым для ўсіх і ўсюды. У мяне ёсць досвед працы з HTML/CSS/JavaScript. Зірніце на мае праекты. Кожны новы праект паляпшае мае навыкі і прыбляжае мяне да маёй мэты. Звяжыцеся са мной. Я заўсёды гатовы да пошуку творчых і наватарскіх падыходаў для рашэння новых задач!!!",
+    "Я люблю ствараць вэб-сайты і ажыўляць дызайны праз код. Праца з HTML, CSS і JavaScript дазваляе мне ствараць макеты, якія не толькі функцыянальныя, але і візуальна прывабныя. Ёсць нешта асаблівае ў тым, каб узяць канцэпцыю дызайну і ператварыць яе ў поўнасцю інтэрактыўны, зручны для карыстальніка інтэрфейс. У той жа час мне падабаецца вывучаць новыя тэхналогіі і даследаваць магчымасці, якія яны даюць. Кожны праект — гэта магчымасць не толькі палепшыць навыкі ў кодзіраванні і верстцы, але і паэксперыментаваць з новымі інструментамі, фрэймворкамі і падыходамі. Я заўсёды гатовы знаходзіць крэатыўныя і інавацыйныя рашэнні для новых задач!",
     "skills-title": "Мае Навыкі",
     "projects-title": "Некаторыя з маіх праектаў",
     "tag-all": "Усе",
@@ -163,10 +162,10 @@ const i18Obj = {
     "intro-title-name": "Меня зовут",
     "intro-title-fullname": "Аляксей Синявский",
     "intro-subtitle-info":
-      "Я — Technical Account Manager. И мне нравится создавать интерактивные и доступные веб-сайты и веб-приложения.",
+    "Я — Technical Account Manager. И мне нравится создавать интерактивные и доступные веб-сайты и веб-приложения.",
     "about-title": "Больше обо мне",
     "about-text":
-      "Я порядочный, целеустремленный front-end веб-разработчик. Моя цель — стать профессиональным веб-разработчиком, который создает вещи, помогающие сделать жизнь лучше для всех и везде. У меня есть опыт работы с HTML/CSS/JavaScript. Взгляните на мои проекты. Каждый новый проект улучшает мои навыки и приближает меня к моей цели. Свяжитесь со мной. Я всегда готов найти креативные и нестандартные решения для новых задач!!!",
+    "Я люблю создавать веб-сайты и оживлять дизайны с помощью кода. Работа с HTML, CSS и JavaScript позволяет создавать макеты, которые не только функциональны, но и визуально привлекательны. Есть что-то особенное в том, чтобы взять концепцию дизайна и превратить её в полностью интерактивный, удобный для пользователя интерфейс. В то же время, мне нравится изучать новые технологии и исследовать возможности, которые они открывают. Каждый проект — это возможность не только улучшить навыки в кодировании и верстке, но и поэкспериментировать с новыми инструментами, фреймворками и подходами. Я всегда готов находить креативные и инновационные решения для новых задач!",
     "about-me-importnat": "front-end web developer.",
     "intro-welcome": "Добро пожаловать на мой сайт",
     "skills-title": "Мои навыки",
