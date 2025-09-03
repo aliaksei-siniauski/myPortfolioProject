@@ -45,13 +45,15 @@
 
 .about__img {
   width: 300px;
-  height: 360px; 
+  height: 360px;
   border-radius: 50%;
-  object-fit: cover;
   border: 4px solid #0077b6;
-  -webkit-animation: filter-animation 5s infinite;
-  animation: filter-animation 5s infinite;
-   @extend %transition;
+  object-fit: cover;
+  @extend%transition;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .text-important {
