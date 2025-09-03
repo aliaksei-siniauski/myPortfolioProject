@@ -1,9 +1,9 @@
 .skills-wrapper {
-  width: 75%;
+  width: 100%;
   @extend %flex;
   @extend %flex-wrap;
   @extend %js-content-center;
-  gap: 2rem;
+  gap: 3rem;
   margin: 0 auto;
   padding: 2rem 0;
 
